@@ -1,0 +1,250 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	background-color: transparent;
+	z-index: 9999;
+	.logo {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		// width: 25px;
+		// height: 25px;
+		margin: 10px 0;
+		transform: translateY(2px);
+		z-index: 0;
+		a {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.rye, .anotherHand {
+				font-size: 2rem;
+			}
+			> span {
+				&:last-child {
+					position: absolute;
+					bottom: -7px;
+					transform: translateX(-53px);
+				}
+			}
+		}
+	}
+
+	@keyframes logoPulse {
+		0%   { transform: scale(0.0); }
+		25%  { opacity: 0.2; }
+		50%  { transform: scale(1.8);
+				opacity: 0.0; }
+		100% { transform: scale(1.8);
+				opacity: 0.0; }
+	}
+
+	.hamburger {
+		position: absolute;
+		right: 0;
+		top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 35px;
+		height: 35px;
+		padding: 3px;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		z-index: 999;
+		@media (min-width: $lg) {
+			display: none;
+		}
+		> span {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: $secondary;
+			transition: 0.25s;
+			&:before,
+			&:after {
+				position: absolute;
+				content: '';
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: $secondary;
+				transform-origin: center center;
+				transition: 0.25s;
+			}
+			&:before {
+				transform: translateY(-7px);
+			}
+			&:after {
+				transform: translateY(7px);
+			}
+		}
+		&.menu-open {
+			> span {
+				background-color: transparent;
+				&:before {
+					background-color: $white;
+					transform: translateY(0px) rotate(-45deg);
+				}
+				&:after {
+					background-color: $white;
+					transform: translateY(0px) rotate(45deg);
+				}
+			}
+		}
+	} 
+	
+	nav {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		width: 100%;
+		height: 100vh;
+		padding: 100px 10px 0;
+		background-color: rgba($primary,0.8);
+		transition: 0.25s;
+		z-index: 0;
+		@media (min-width: $med) {
+			width: 33%;
+		}
+		@media (min-width: $lg) {
+			position: relative;
+			right: 0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			width: auto;
+			height: auto;
+			padding: 0;
+			background-color: transparent;
+			//transform: translateX(10%);
+		}
+		&.menu-open {
+			right: 0;
+			.nav-link {
+				transform: translateX(0%);
+			}
+		}
+		> ul {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-end;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			z-index: 0;
+			@media (min-width: $med) {
+				flex-direction: row;
+			}
+			.nav-link {
+				position: relative;
+				display: block;
+				width: 100%;
+				border-top: 1px dashed rgba($white,0.5);
+				text-align: center;
+				transform: translateX(100%);
+				transition: 0.25s;
+				transition-delay: 0.25s;
+				z-index: -1;
+				&:last-child {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					a {
+						display: inline;
+						width: 15%;
+					}
+				}
+				@for $i from 1 through 6 {
+					&:nth-of-type(#{$i}) {
+						transition-delay: $i * 0.11s;
+					}
+				}
+				@media (min-width: $lg) {
+					transform: translateX(0%);
+				}
+				> a {
+					position: relative;
+					display: block;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+					height: 100%;
+					padding: 15px 0;
+					color: $white;
+					font-size: 1.625rem;
+					&:hover {
+						color: $white;
+					}
+					&.router-link-active {
+						//border-bottom: 2px solid $vue-blue;
+						color: white;
+						@media (min-width: $med) {
+							color: $primary;
+						}
+					}
+					@media (min-width: $lg) {
+						padding: 15px;
+						font-size: 14px;
+						text-align: center;
+						transform: translateX(0%);
+						z-index: 0;
+						&:hover {
+							color: $primary;
+							ul {
+								display: block;
+							}
+						}
+					}
+					.dropdown-menu {
+						margin: 0;
+						padding: 0 0 0 15px;
+						list-style-type: none;
+						@media (min-width: $lg) {
+							position: absolute;
+							display: none;
+							top: 100%;
+							left: 50%;
+							padding: 0;
+							background-color: white;
+							//border-top: 4px solid $vue-blue;
+							box-shadow: 0 0 20px rgba(black,0.2);
+							transform: translateX(-50%);
+							z-index: -999;
+						}
+						> li {
+							@media (min-width: $lg) {
+								position: relative;
+								display: block;
+								//min-width: 150px;
+								text-align: left;
+								z-index: -2;
+								a {
+									display: block;
+									padding: 15px 25px;
+									&:hover {
+										color: $primary;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
