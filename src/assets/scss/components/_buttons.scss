@@ -6,32 +6,33 @@
 	margin: 0 0 1rem 0;
 	padding: 0.625rem 1.25rem;
 	background-color: $gray;
-	border: 1px solid $gray;
+	border: 0.0625rem solid $gray;
 	border-radius: 0.25rem;
 	color: $white;
 	font-size: 0.875rem;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 1;
 	text-decoration: none;
+	text-transform: uppercase;
 	appearance: none;
 	cursor: pointer;
 	transition: 0.15s linear;
 	vertical-align: middle;
 	&:hover {
 		background-color: lighten($gray,10%);
-		border: 1px solid lighten($gray,10%);
+		border: 0.0625rem solid lighten($gray,10%);
 		color: $white;
 	}
 	&:disabled,
 	&[disabled] {
 		background-color: $gray-lightest;
-		border: 1px solid $gray-lightest;
+		border: 0.0625rem solid $gray-lightest;
 		&:hover {
 			cursor: not-allowed;
 		}
 	}
 	&--clear {
-		padding: 2px;
+		padding: 0.125rem;
 		background-color: transparent;
 		border: none;
 		color: $gray;
@@ -41,7 +42,7 @@
 			bottom: 0;
 			left: 0;
 			width: 0%;
-			height: 1px;
+			height: 0.0625rem;
 			background-color: $gray;
 			transition: width 0.15s linear;
 		}
@@ -55,7 +56,7 @@
 		}
 	}
 	&--block {
-		padding: 2px;
+		padding: 0.125rem;
 		background-color: transparent;
 		border: none;
 		color: $gray;
@@ -82,22 +83,22 @@
 	}
 	&--hollow {
 		background-color: transparent;
-		border: 1px solid $gray;
+		border: 0.0625rem solid $gray;
 		color: $gray;
 	}
 	&-primary {
 		background-color: $primary;
-		border: 1px solid $primary;
+		border: 0.0625rem solid $primary;
 		&:hover {
 			background-color: lighten($primary,5%);
-			border: 1px solid lighten($primary,5%);
+			border: 0.0625rem solid lighten($primary,5%);
 		}
 		&--disabled {
 			background-color: lighten($primary,25%) !important;
-			border: 1px solid lighten($primary,25%) !important;
+			border: 0.0625rem solid lighten($primary,25%) !important;
 		}
 		&--clear {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $primary;
@@ -107,7 +108,7 @@
 				bottom: 0;
 				left: 0;
 				width: 0%;
-				height: 1px;
+				height: 0.0625rem;
 				background-color: $primary;
 				transition: width 0.15s linear;
 			}
@@ -121,7 +122,7 @@
 			}
 		}
 		&--block {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $primary;
@@ -148,27 +149,27 @@
 		}
 		&--hollow {
 			background-color: transparent;
-			border: 1px solid $primary;
+			border: 0.0625rem solid $primary;
 			color: $primary;
 			&:hover {
 				background-color: $primary;
-				border: 1px solid $primary;
+				border: 0.0625rem solid $primary;
 			}
 		}
 	}
 	&-secondary {
 		background-color: $secondary;
-		border: 1px solid $secondary;
+		border: 0.0625rem solid $secondary;
 		&:hover {
 			background-color: lighten($secondary,5%);
-			border: 1px solid lighten($secondary,5%);
+			border: 0.0625rem solid lighten($secondary,5%);
 		}
 		&--disabled {
 			background-color: lighten($secondary,25%) !important;
-			border: 1px solid lighten($secondary,25%) !important;
+			border: 0.0625rem solid lighten($secondary,25%) !important;
 		}
 		&--clear {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $secondary;
@@ -178,7 +179,7 @@
 				bottom: 0;
 				left: 0;
 				width: 0%;
-				height: 1px;
+				height: 0.0625rem;
 				background-color: $secondary;
 				transition: width 0.15s linear;
 			}
@@ -192,7 +193,7 @@
 			}
 		}
 		&--block {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $secondary;
@@ -219,27 +220,27 @@
 		}
 		&--hollow {
 			background-color: transparent;
-			border: 1px solid $secondary;
+			border: 0.0625rem solid $secondary;
 			color: $secondary;
 			&:hover {
 				background-color: $secondary;
-				border: 1px solid $secondary;
+				border: 0.0625rem solid $secondary;
 			}
 		}
 	}
 	&-accent {
 		background-color: $accent;
-		border: 1px solid $accent;
+		border: 0.0625rem solid $accent;
 		&:hover {
 			background-color: lighten($accent,5%);
-			border: 1px solid lighten($accent,5%);
+			border: 0.0625rem solid lighten($accent,5%);
 		}
 		&--disabled {
 			background-color: lighten($accent,25%) !important;
-			border: 1px solid lighten($accent,25%) !important;
+			border: 0.0625rem solid lighten($accent,25%) !important;
 		}
 		&--clear {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $accent;
@@ -249,7 +250,7 @@
 				bottom: 0;
 				left: 0;
 				width: 0%;
-				height: 1px;
+				height: 0.0625rem;
 				background-color: $accent;
 				transition: width 0.15s linear;
 			}
@@ -264,15 +265,15 @@
 		}
 		&--hollow {
 			background-color: transparent;
-			border: 1px solid $accent;
+			border: 0.0625rem solid $accent;
 			color: $accent;
 			&:hover {
 				background-color: $accent;
-				border: 1px solid $accent;
+				border: 0.0625rem solid $accent;
 			}
 		}
 		&--block {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $accent;
@@ -300,17 +301,17 @@
 	}
 	&-success {
 		background-color: $success;
-		border: 1px solid $success;
+		border: 0.0625rem solid $success;
 		&:hover {
 			background-color: lighten($success,5%);
-			border: 1px solid lighten($success,5%);
+			border: 0.0625rem solid lighten($success,5%);
 		}
 		&--disabled {
 			background-color: lighten($success,25%) !important;
-			border: 1px solid lighten($success,25%) !important;
+			border: 0.0625rem solid lighten($success,25%) !important;
 		}
 		&--clear {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $success;
@@ -320,7 +321,7 @@
 				bottom: 0;
 				left: 0;
 				width: 0%;
-				height: 1px;
+				height: 0.0625rem;
 				background-color: $success;
 				transition: width 0.15s linear;
 			}
@@ -335,15 +336,15 @@
 		}
 		&--hollow {
 			background-color: transparent;
-			border: 1px solid $success;
+			border: 0.0625rem solid $success;
 			color: $success;
 			&:hover {
 				background-color: $success;
-				border: 1px solid $success;
+				border: 0.0625rem solid $success;
 			}
 		}
 		&--block {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $success;
@@ -370,18 +371,27 @@
 		}
 	}
 	&-info {
-		background-color: $info;
-		border: 1px solid $info;
+		padding-right: 3.75rem;
+		color: $secondary;
+		&:after {
+			position: absolute;
+			content: "\f05a";
+			font-weight: 900;
+			top: 50%;
+			right: 1.25rem;
+			font-family: $awesome;
+			transform: translateY(-50%);
+		}
 		&:hover {
 			background-color: lighten($info,5%);
-			border: 1px solid lighten($info,5%);
+			border: 0.0625rem solid lighten($info,5%);
 		}
 		&--disabled {
 			background-color: lighten($info,25%) !important;
-			border: 1px solid lighten($info,25%) !important;
+			border: 0.0625rem solid lighten($info,25%) !important;
 		}
 		&--clear {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $info;
@@ -391,7 +401,7 @@
 				bottom: 0;
 				left: 0;
 				width: 0%;
-				height: 1px;
+				height: 0.0625rem;
 				background-color: $info;
 				transition: width 0.15s linear;
 			}
@@ -406,15 +416,15 @@
 		}
 		&--hollow {
 			background-color: transparent;
-			border: 1px solid $info;
+			border: 0.0625rem solid $info;
 			color: $info;
 			&:hover {
 				background-color: $info;
-				border: 1px solid $info;
+				border: 0.0625rem solid $info;
 			}
 		}
 		&--block {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $info;
@@ -442,17 +452,17 @@
 	}
 	&-warning {
 		background-color: $warning;
-		border: 1px solid $warning;
+		border: 0.0625rem solid $warning;
 		&:hover {
 			background-color: lighten($warning,5%);
-			border: 1px solid lighten($warning,5%);
+			border: 0.0625rem solid lighten($warning,5%);
 		}
 		&--disabled {
 			background-color: lighten($warning,25%) !important;
-			border: 1px solid lighten($warning,25%) !important;
+			border: 0.0625rem solid lighten($warning,25%) !important;
 		}
 		&--clear {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $warning;
@@ -462,7 +472,7 @@
 				bottom: 0;
 				left: 0;
 				width: 0%;
-				height: 1px;
+				height: 0.0625rem;
 				background-color: $warning;
 				transition: width 0.15s linear;
 			}
@@ -477,15 +487,15 @@
 		}
 		&--hollow {
 			background-color: transparent;
-			border: 1px solid $warning;
+			border: 0.0625rem solid $warning;
 			color: $warning;
 			&:hover {
 				background-color: $warning;
-				border: 1px solid $warning;
+				border: 0.0625rem solid $warning;
 			}
 		}
 		&--block {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $warning;
@@ -513,17 +523,17 @@
 	}
 	&-alert {
 		background-color: $alert;
-		border: 1px solid $alert;
+		border: 0.0625rem solid $alert;
 		&:hover {
 			background-color: lighten($alert,5%);
-			border: 1px solid lighten($alert,5%);
+			border: 0.0625rem solid lighten($alert,5%);
 		}
 		&--disabled {
 			background-color: lighten($alert,25%) !important;
-			border: 1px solid lighten($alert,25%) !important;
+			border: 0.0625rem solid lighten($alert,25%) !important;
 		}
 		&--clear {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $alert;
@@ -533,7 +543,7 @@
 				bottom: 0;
 				left: 0;
 				width: 0%;
-				height: 1px;
+				height: 0.0625rem;
 				background-color: $alert;
 				transition: width 0.15s linear;
 			}
@@ -548,15 +558,15 @@
 		}
 		&--hollow {
 			background-color: transparent;
-			border: 1px solid $alert;
+			border: 0.0625rem solid $alert;
 			color: $alert;
 			&:hover {
 				background-color: $alert;
-				border: 1px solid $alert;
+				border: 0.0625rem solid $alert;
 			}
 		}
 		&--block {
-			padding: 2px;
+			padding: 0.125rem;
 			background-color: transparent;
 			border: none;
 			color: $alert;

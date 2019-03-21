@@ -1,0 +1,19 @@
+.promo-banner {
+	padding: 0.625rem 0;
+	h3 {
+		margin: 0;
+	}
+	p {
+		margin: 0;
+		font-weight: 400;
+	}
+	.home & {
+		background-color: $primary;
+		h3 {
+			color: $secondary;
+		}
+		p {
+			color: $white;
+		}
+	}
+}

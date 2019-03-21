@@ -7,7 +7,7 @@
 						span.rye.colorWhite Willy's 
 						span.anotherHand.colorSecondary Sportsbar
 						span.colorPrimary & Casino
-				button.hamburger
+				button.hamburger(@click="menuToggle()")
 					span
 				Navigation
 </template>
@@ -23,6 +23,13 @@ export default {
 	data () {
 		return {
 			title: 'Header'
+		}
+	},
+	methods () {
+		return {
+			menuToggle: function menuToggle() {
+				this.isOpen = true
+			}
 		}
 	}
 }

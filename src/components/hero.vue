@@ -4,22 +4,20 @@
 			.grid-x
 				.cell.hours
 					h3 Hours
-					div Sunday: 10:00 am - 12:00 am
-					div Monday - Thursday: 11:00 am - 1:00 am 
-						span.open (open)
-					div Friday: 11:00 am - 2:00 am
-					div Saturday: 10:00 am - 2:00 am
-
+					ul.hours-list
+						li Sunday: 10:00 am - 12:00 am
+						li Monday - Thursday: 11:00 am - 1:00 am 
+							span.open (open)
+						li Friday: 11:00 am - 2:00 am
+						li Saturday: 10:00 am - 2:00 am
+					.hours-happy
+						h4 Happy Hour Mon - Fri 4:00pm - 7:00pm
 </template>
 
 <script>
-// @ is an alias to /src
-import Hero from '@/components/hero';
-
 export default {
-	name: 'home',
+	name: 'hero',
 	components: {
-		Hero,
 	}
 }
 </script>

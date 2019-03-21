@@ -1,6 +1,7 @@
 // external 
-@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Rye|Source+Sans+Pro:300,400,700');
-@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Rye');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700');
+@import url('https://use.fontawesome.com/releases/v5.8.0/css/all.css');
 
 // wizardry 
 @import 
@@ -14,7 +15,8 @@
 	'base/grid',
 	'base/fonts',
 	'base/helpers',
-	'base/icons';
+	'base/icons',
+	'base/typography';
 	
 // components
 @import
@@ -25,6 +27,9 @@
 	'components/header',
 	'components/hero',
 	'components/home',
+	'components/intro',
+	'components/promoBanner',
+	'components/section',
 	'components/tooltip';
 
 // vendor

@@ -11,10 +11,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		// width: 25px;
-		// height: 25px;
-		margin: 10px 0;
-		transform: translateY(2px);
+		// width: 1.5625rem;
+		// height: 1.5625rem;
+		margin: 0.625rem 0;
+		transform: translateY(0.125rem);
 		z-index: 0;
 		a {
 			position: relative;
@@ -26,8 +26,8 @@
 			> span {
 				&:last-child {
 					position: absolute;
-					bottom: -7px;
-					transform: translateX(-53px);
+					bottom: -0.4375rem;
+					transform: translateX(-3.3125rem);
 				}
 			}
 		}
@@ -45,13 +45,13 @@
 	.hamburger {
 		position: absolute;
 		right: 0;
-		top: 20px;
+		top: 1.25rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 35px;
-		height: 35px;
-		padding: 3px;
+		width: 2.1875rem;
+		height: 2.1875rem;
+		padding: 0.1875rem;
 		background-color: transparent;
 		border: none;
 		cursor: pointer;
@@ -64,7 +64,7 @@
 			position: relative;
 			display: block;
 			width: 100%;
-			height: 2px;
+			height: 0.125rem;
 			background-color: $secondary;
 			transition: 0.25s;
 			&:before,
@@ -73,16 +73,16 @@
 				content: '';
 				left: 0;
 				width: 100%;
-				height: 2px;
+				height: 0.125rem;
 				background-color: $secondary;
 				transform-origin: center center;
 				transition: 0.25s;
 			}
 			&:before {
-				transform: translateY(-7px);
+				transform: translateY(-0.4375rem);
 			}
 			&:after {
-				transform: translateY(7px);
+				transform: translateY(0.4375rem);
 			}
 		}
 		&.menu-open {
@@ -90,11 +90,11 @@
 				background-color: transparent;
 				&:before {
 					background-color: $white;
-					transform: translateY(0px) rotate(-45deg);
+					transform: translateY(0) rotate(-45deg);
 				}
 				&:after {
 					background-color: $white;
-					transform: translateY(0px) rotate(45deg);
+					transform: translateY(0) rotate(45deg);
 				}
 			}
 		}
@@ -110,7 +110,7 @@
 		justify-content: flex-start;
 		width: 100%;
 		height: 100vh;
-		padding: 100px 10px 0;
+		padding: 6.25rem 0.625rem 0;
 		background-color: rgba($primary,0.8);
 		transition: 0.25s;
 		z-index: 0;
@@ -154,7 +154,7 @@
 				position: relative;
 				display: block;
 				width: 100%;
-				border-top: 1px dashed rgba($white,0.5);
+				border-top: 0.0625rem dashed rgba($white,0.5);
 				text-align: center;
 				transform: translateX(100%);
 				transition: 0.25s;
@@ -184,22 +184,22 @@
 					justify-content: space-between;
 					width: 100%;
 					height: 100%;
-					padding: 15px 0;
+					padding: 0.9375rem 0;
 					color: $white;
 					font-size: 1.625rem;
 					&:hover {
 						color: $white;
 					}
 					&.router-link-active {
-						//border-bottom: 2px solid $vue-blue;
+						//border-bottom: 0.125rem solid $vue-blue;
 						color: white;
 						@media (min-width: $med) {
 							color: $primary;
 						}
 					}
 					@media (min-width: $lg) {
-						padding: 15px;
-						font-size: 14px;
+						padding: 0.9375rem;
+						font-size: 0.875rem;
 						text-align: center;
 						transform: translateX(0%);
 						z-index: 0;
@@ -212,7 +212,7 @@
 					}
 					.dropdown-menu {
 						margin: 0;
-						padding: 0 0 0 15px;
+						padding: 0 0 0 0.9375rem;
 						list-style-type: none;
 						@media (min-width: $lg) {
 							position: absolute;
@@ -221,8 +221,8 @@
 							left: 50%;
 							padding: 0;
 							background-color: white;
-							//border-top: 4px solid $vue-blue;
-							box-shadow: 0 0 20px rgba(black,0.2);
+							//border-top: 0.25rem solid $vue-blue;
+							box-shadow: 0 0 1.25rem rgba(black,0.2);
 							transform: translateX(-50%);
 							z-index: -999;
 						}
@@ -230,12 +230,12 @@
 							@media (min-width: $lg) {
 								position: relative;
 								display: block;
-								//min-width: 150px;
+								//min-width: 9.375rem;
 								text-align: left;
 								z-index: -2;
 								a {
 									display: block;
-									padding: 15px 25px;
+									padding: 0.9375rem 1.5625rem;
 									&:hover {
 										color: $primary;
 									}

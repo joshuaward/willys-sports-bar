@@ -25,7 +25,15 @@ export default {
 	name: 'navigation',
 	data () {
 		return {
-			title: 'Navigation'
+			title: 'Navigation',
+			isOpen: false
+		}
+	},
+	methods () {
+		return {
+			menuToggle: function menuToggle() {
+				this.isOpen = true
+			}
 		}
 	}
 }
