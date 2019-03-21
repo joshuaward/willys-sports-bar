@@ -31,9 +31,6 @@ export default {
 	},
 	methods () {
 		return {
-			menuToggle: function menuToggle() {
-				this.isOpen = true
-			}
 		}
 	}
 }

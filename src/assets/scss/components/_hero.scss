@@ -4,7 +4,7 @@
 	align-items: flex-end;
 	justify-content: flex-start;
 	width: 100vw;
-	height: 69vh;
+	height: calc(100vh - 4.25rem);
 	padding: 0;
 	z-index: 0;
 	&:before,
