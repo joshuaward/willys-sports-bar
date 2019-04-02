@@ -1,11 +1,23 @@
+.mb-20 {
+	margin-bottom: 90rem !important;
+}
 .header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 0;
+	padding: 0 0 0.625rem;
 	background-color: transparent;
+	will-change: transform;
+	transform: translateY(0%);
+	transition: transform 200ms linear;
 	z-index: 9999;
+	&-sticky {
+		background-color: rgba($black,0.8);
+	}
+	&-unsticky {
+		transform: translateY(-100%);
+	}
 	.logo {
 		position: relative;
 		display: flex;
@@ -85,7 +97,7 @@
 				transform: translateY(0.4375rem);
 			}
 		}
-		&.menu-open {
+		&.active {
 			> span {
 				background-color: transparent;
 				&:before {
@@ -130,7 +142,7 @@
 			background-color: transparent;
 			//transform: translateX(10%);
 		}
-		&.menu-open {
+		&.active {
 			right: 0;
 			.nav-link {
 				transform: translateX(0%);
