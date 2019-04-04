@@ -53,7 +53,6 @@ export default {
 				this.background = false;
 			}
 			this.lastPosition = window.scrollY;
-			console.log(window.scrollY);
     }
 	},
 	created() {
