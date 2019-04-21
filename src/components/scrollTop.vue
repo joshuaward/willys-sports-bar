@@ -13,9 +13,7 @@ export default {
 			isOpen: false
 		}
 	},
-	methods () {
-		return {
-		}
+	methods: {
 	}
 }
 </script>

@@ -2,7 +2,7 @@
 	main.home
 		Hero
 		PromoBanner
-		section.intro.intro-home.mb-20
+		section.intro.intro-home
 			.grid-container
 				.grid-x
 					.cell.medium-6
@@ -13,24 +13,25 @@
 						a.button.button-primary.button-info(href="/about") More Info
 					.cell.medium-6
 						//-carousel(:data="data", :indicators="true", :controls="true")
-						
+						Carousel.intro-home
+		Testimonials.home
 </template>
 
 <script>
 // @ is an alias to /src:controls="true"
-import Vue from 'vue';
+//import Vue from 'vue';
 import Hero from '@/components/hero';
 import PromoBanner from '@/components/promoBanner';
-import VueCarousel from '@chenfengyuan/vue-carousel';
-
-Vue.component(VueCarousel.name, VueCarousel);
+import Carousel from '@/components/carousel';
+import Testimonials from '@/components/testimonials';
 
 export default {
 	name: 'home',
 	components: {
 		Hero,
 		PromoBanner,
-		VueCarousel
+		Carousel,
+		Testimonials
 	},
 	data() {
 		return {

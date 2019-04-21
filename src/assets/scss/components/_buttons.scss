@@ -16,7 +16,7 @@
 	text-transform: uppercase;
 	appearance: none;
 	cursor: pointer;
-	transition: 0.15s linear;
+	transition: $base-duration linear;
 	vertical-align: middle;
 	&:hover {
 		background-color: lighten($gray,10%);
@@ -44,7 +44,7 @@
 			width: 0%;
 			height: 0.0625rem;
 			background-color: $gray;
-			transition: width 0.15s linear;
+			transition: width $base-duration linear;
 		}
 		&:hover {
 			background-color: transparent;
@@ -69,7 +69,7 @@
 			width: 100%;
 			height: 0%;
 			background-color: $gray;
-			transition: height 0.15s linear;
+			transition: height $base-duration linear;
 			z-index: -1;
 		}
 		&:hover {
@@ -110,7 +110,7 @@
 				width: 0%;
 				height: 0.0625rem;
 				background-color: $primary;
-				transition: width 0.15s linear;
+				transition: width $base-duration linear;
 			}
 			&:hover {
 				background-color: transparent;
@@ -135,7 +135,7 @@
 				width: 100%;
 				height: 0%;
 				background-color: $primary;
-				transition: height 0.15s linear;
+				transition: height $base-duration linear;
 				z-index: -1;
 			}
 			&:hover {
@@ -181,7 +181,7 @@
 				width: 0%;
 				height: 0.0625rem;
 				background-color: $secondary;
-				transition: width 0.15s linear;
+				transition: width $base-duration linear;
 			}
 			&:hover {
 				background-color: transparent;
@@ -206,7 +206,7 @@
 				width: 100%;
 				height: 0%;
 				background-color: $secondary;
-				transition: height 0.15s linear;
+				transition: height $base-duration linear;
 				z-index: -1;
 			}
 			&:hover {
@@ -252,7 +252,7 @@
 				width: 0%;
 				height: 0.0625rem;
 				background-color: $accent;
-				transition: width 0.15s linear;
+				transition: width $base-duration linear;
 			}
 			&:hover {
 				background-color: transparent;
@@ -286,7 +286,7 @@
 				width: 100%;
 				height: 0%;
 				background-color: $accent;
-				transition: height 0.15s linear;
+				transition: height $base-duration linear;
 				z-index: -1;
 			}
 			&:hover {
@@ -323,7 +323,7 @@
 				width: 0%;
 				height: 0.0625rem;
 				background-color: $success;
-				transition: width 0.15s linear;
+				transition: width $base-duration linear;
 			}
 			&:hover {
 				background-color: transparent;
@@ -357,7 +357,7 @@
 				width: 100%;
 				height: 0%;
 				background-color: $success;
-				transition: height 0.15s linear;
+				transition: height $base-duration linear;
 				z-index: -1;
 			}
 			&:hover {
@@ -403,7 +403,7 @@
 				width: 0%;
 				height: 0.0625rem;
 				background-color: $info;
-				transition: width 0.15s linear;
+				transition: width $base-duration linear;
 			}
 			&:hover {
 				background-color: transparent;
@@ -437,7 +437,7 @@
 				width: 100%;
 				height: 0%;
 				background-color: $info;
-				transition: height 0.15s linear;
+				transition: height $base-duration linear;
 				z-index: -1;
 			}
 			&:hover {
@@ -474,7 +474,7 @@
 				width: 0%;
 				height: 0.0625rem;
 				background-color: $warning;
-				transition: width 0.15s linear;
+				transition: width $base-duration linear;
 			}
 			&:hover {
 				background-color: transparent;
@@ -508,7 +508,7 @@
 				width: 100%;
 				height: 0%;
 				background-color: $warning;
-				transition: height 0.15s linear;
+				transition: height $base-duration linear;
 				z-index: -1;
 			}
 			&:hover {
@@ -545,7 +545,7 @@
 				width: 0%;
 				height: 0.0625rem;
 				background-color: $alert;
-				transition: width 0.15s linear;
+				transition: width $base-duration linear;
 			}
 			&:hover {
 				background-color: transparent;
@@ -579,7 +579,7 @@
 				width: 100%;
 				height: 0%;
 				background-color: $alert;
-				transition: height 0.15s linear;
+				transition: height $base-duration linear;
 				z-index: -1;
 			}
 			&:hover {

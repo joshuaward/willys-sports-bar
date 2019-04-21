@@ -28,10 +28,8 @@ export default {
 			title: 'Navigation',
 		}
 	},
-	methods () {
-		return {
+	methods: {
 			
-		}
 	}
 }
 </script>

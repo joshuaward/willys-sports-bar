@@ -62,7 +62,7 @@ a[data-tooltip] {
 		position: absolute;
 		visibility: hidden;
 		opacity: 0;
-		transition: transform 200ms ease, opacity 200ms;
+		transition: transform $base-duration ease, opacity $base-duration;
 		box-shadow: 0 0 0.625rem rgba(black,0.3);
 		z-index: 99;
 	}
