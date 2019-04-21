@@ -1,5 +1,5 @@
 <template lang="pug">
-	section.hero
+	section.hero.plax-1
 		.grid-container.full
 			.grid-x
 				.cell.hours
