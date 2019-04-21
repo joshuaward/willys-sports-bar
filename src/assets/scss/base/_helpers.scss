@@ -2,28 +2,43 @@
 .anotherHand {
 	font-family: $anotherHand !important;
 }
-
 .rye {
 	font-family: $rye !important;
+	font-weight: normal;
 }
-
 .nunito {
 	font-family: $nunito !important;
 }
-
+// text alignment
+.textCenter {
+	text-align: center !important;
+}
+.textRight {
+	text-align: right !important;
+}
+.textLeft {
+	text-align: left !important;
+}
 // Text color
 .colorWhite {
 	color: $white !important;
 }
-
 .colorPrimary {
 	color: $primary !important;
 }
-
 .colorSecondary {
 	color: $secondary !important;
 }
-
 .colorAccent {
 	color: $accent !important;
+}
+// fill colors
+.fillPrimary {
+	background-color: $primary !important;
+}
+.fillSecondary {
+	background-color: $secondary !important;
+}
+.fillAccent {
+	background-color: $accent !important;
 }

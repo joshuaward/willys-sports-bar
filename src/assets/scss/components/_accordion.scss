@@ -1,0 +1,54 @@
+.accordion {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: $spacer;
+}
+
+.accordion-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.accordion-trigger {
+	transition: all .2s ease-in-out;
+	margin-bottom:1px;
+	padding: $spacer/2;
+	background-color: gray;
+	display:flex;
+	justify-content:space-between;
+	cursor:pointer;
+	&:after {
+		content:'+';
+	}
+	.is-open & {
+			background-color: gray;
+			color:$white;
+			&:after {
+				content:'-';
+			}
+	}
+}
+
+.accordion-content {
+	display: none;
+	padding: $spacer*2 $spacer;
+	>*:last-child {
+			margin-bottom: 0;
+	}
+	//just to display the content when the script adds the .is-open class on load and user click
+	.is-open & {
+			display:block;
+	}
+	//a nifty hook to do animations or whatevs when content is triggered open by user
+	.is-opening & {
+			animation: 1s accordion;
+	}
+}
+@keyframes accordion {
+	from {
+			opacity:0;
+	}
+	to {
+			opacity:1;
+	}
+}

@@ -50,11 +50,7 @@ export default {
 			this.startRotation();
 		},
 		navigate: function(dir) {
-			var current = this.currentNumber;
-			
-			// if you want to simplify, this line can take the place of the block below
-			// current = current + dir > this.length ? 0 : current < 0 ? this.length : current + dir;
-			
+			var current = this.currentNumber;			
 			// replace start
 			current = current + dir;
 			if (current > this.length) {
@@ -64,7 +60,6 @@ export default {
 				current = this.length;
 			}
 			//replace end
-			
 			this.resetRotation();
 			this.currentNumber = current;
 		}

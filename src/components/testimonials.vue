@@ -1,13 +1,14 @@
 <template lang="pug">
 	section.testimonials
 		.grid-container
-			.grid-x
+			.grid-x.align-center
 				.cell.medium-8
-					h2.anotherHand.colorSecondary Word on the streets...
+					h2.anotherHand Word on the streets...
 					blockquote.testimonial
 						p Solid burgers, must be 15 different versions on the menu. Peanut butter burger is definitely something to try.
 					.testimonial-author
-						em - Some Guy
+						| — 
+						em.colorSecondary Some Guy
 
 </template>
 
