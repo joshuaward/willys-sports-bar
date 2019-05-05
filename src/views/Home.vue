@@ -18,8 +18,18 @@
 			.grid-container
 				.grid-x
 					.cell
-						h2.rye.textCenter.colorSecondary Specials
-						Accordion
+						h2.rye.textCenter.colorSecondary.mb-2 Specials
+			Accordion
+		section.cards
+			.grid-container
+				.grid-x
+					.cell.medium-6.large-4
+						Card(v-bind:title="Hi")
+					.cell.medium-6.large-4
+						Card
+					.cell.medium-12.large-4
+						Card
+		Subscribe
 </template>
 
 <script>
@@ -28,6 +38,8 @@ import Accordion from '@/components/accordion';
 import PromoBanner from '@/components/promoBanner';
 import Carousel from '@/components/carousel';
 import Testimonials from '@/components/testimonials';
+import Card from '@/components/card';
+import Subscribe from '@/components/subscribe';
 
 export default {
 	name: 'home',
@@ -36,7 +48,9 @@ export default {
 		Accordion,
 		PromoBanner,
 		Carousel,
-		Testimonials
+		Testimonials,
+		Card,
+		Subscribe
 	},
 	data() {
 		return {

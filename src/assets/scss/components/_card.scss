@@ -1,53 +1,68 @@
-#cards {
-	
-}
-
 .card {
 	position: relative;
-	border-radius: 0.1875rem;
-	box-shadow: 0 0.625rem 1.25rem rgba(0,0,0,0.05), 0 0.375rem 0.375rem rgba(0,0,0,0.09);
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	line-height: 1.75;
 	overflow: hidden;
-	.card-header {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 9.375rem;
-		background-image: url('https://images.pexels.com/photos/1441508/pexels-photo-1441508.jpeg');
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
+	&-header {
+
 	}
-	.card-content {
+	&-content {
+		padding: 20px;
+	}
+	&-title {
 		position: relative;
-		display: block;
-		padding: 1.25rem;
-		p {
-			margin: 0;
+		margin: 0 0 15px;
+		color: $primary;
+		font-family: 'Variane Script', $alt-font-family, cursive;
+		font-weight: lighter;
+		text-align: center;
+		&:after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: 50%;
+			width: 30%;
+			height: 5px;
+			background-color: $secondary;
+			transform: translateX(-50%);
 		}
 	}
-	.card-footer {
+	&-copy {
+		margin: 0;
+	}
+	&-footer {
 		position: relative;
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		justify-content: flex-end;
-		button {
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-			//height: 2.5rem;
-			padding: 0.625rem;
-			//background-color: $vue-green;
-			border: none;
-			color: $primary;
-			font-size: 0.875rem;
-			font-weight: 600;
-			span {
-				margin-left: 0.625rem;
-				font-size: 1.25rem;
-			}
+		width: 100%;
+		margin-top: -20px;
+		//background: blue;
+		
+	}
+	&-button {
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		width: $spacer*3;
+		height: $spacer*3;
+		padding: 0 10px 10px 0;
+		// background: salmon;
+		color: $secondary;
+		&:before {
+			position: absolute;
+			content: '';
+			right: -8px;
+			bottom: -33px;
+			background-color: transparent;
+			border-top: 50px solid transparent;
+			border-bottom: 50px solid transparent;
+			border-left: 50px solid $primary;
+			transform: rotate(45deg);
+			z-index: -1;
 		}
 	}
 }

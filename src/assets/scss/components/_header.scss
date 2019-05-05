@@ -29,13 +29,13 @@
 			position: relative;
 			width: 100%;
 			height: 100%;
-			.rye, .anotherHand {
+			.rye, .variane {
 				font-size: 2rem;
 			}
 			> span {
 				&:last-child {
 					position: absolute;
-					bottom: -0.4375rem;
+					bottom: -0.75rem;
 					transform: translateX(-3.3125rem);
 				}
 			}
@@ -57,9 +57,9 @@
 		cursor: pointer;
 		outline: none;
 		z-index: 999;
-		@media (min-width: $lg) {
-			display: none;
-		}
+		// @media (min-width: $lg) {
+		// 	display: none;
+		// }
 		> span {
 			position: relative;
 			display: block;

@@ -5,7 +5,7 @@
 				.cell.logo
 					router-link(to="/")
 						span.rye.colorWhite Willy's 
-						span.anotherHand.colorSecondary Sportsbar
+						span.variane.colorSecondary Sportsbar
 						span.colorPrimary & Casino
 				button.hamburger(@click="toggleMenu()", :class="{ active: isActive }")
 					span

@@ -1,9 +1,32 @@
 // fonts
-$anotherHand: 'Just Another Hand', cursive;
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+
+$variane: 'Variane Script', cursive;
 $rye: 'Rye', cursive;
-$nunito: 'Nunito Sans', sans-serif;
+$avenir: 'Avenir', sans-serif;
 $awesome: 'Font Awesome 5 Free';
 
 $heading-font-family: $rye;
-$base-font-family: $nunito;
-$alt-font-family: $anotherHand;
+$base-font-family: $avenir;
+$alt-font-family: $variane;
+
+@font-face {
+	font-family: 'Variane Script', cursive;
+	src: url('/fonts/variane-script.ttf'); 
+	src: 
+		local('Variane Script'),
+		local('Variane-Script'),
+		url('/fonts/variane-script.ttf') 
+		format('truetype');
+}
+
+@font-face {
+	font-family: 'Avenir', sans-serif;
+	src: url('/fonts/avenir.ttc'); 
+	src: 
+		local('Avenir'),
+		local('Avenir'),
+		url('/fonts/avenir.ttc') 
+		format('truetype');
+}
