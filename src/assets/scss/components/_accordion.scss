@@ -32,28 +32,20 @@
 		}
 	}
 	&-content {
-		display: none;
-		padding: $spacer;
+		padding: 0 $spacer;
 		color: $white;
 		font-weight: 400;
+		height: 0;
+		transition: height 0.25s ease;
+		overflow: hidden;
 		>*:last-child {
 				margin-bottom: 0;
 		}
-		//just to display the content when the script adds the .is-open class on load and user click
-		.is-open & {
-				display:block;
-		}
-		//a nifty hook to do animations or whatevs when content is triggered open by user
-		.is-opening & {
-				animation: 1s accordion;
+		p {
+			padding: $spacer 0;
 		}
 	}
 }
-
-
-
-
-
 
 @keyframes accordion {
 	from {

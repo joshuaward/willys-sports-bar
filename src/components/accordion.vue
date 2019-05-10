@@ -1,53 +1,29 @@
 <template lang="pug">
 	.accordion
-		.accordion-item(@click="toggleAccordion", :class="{ 'is-open': isOpen }", data-hash="item01")
-			.accordion-trigger Sunday
-			.accordion-content
-				p Accordion Content 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		.accordion-item(@click="toggleAccordion", :class="{ 'is-open': isOpen }", data-hash="item02")
-			.accordion-trigger Monday
-			.accordion-content
-				p Accordion Content 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		.accordion-item(@click="toggleAccordion", :class="{ 'is-open': isOpen }", data-hash="item03")
-			.accordion-trigger Tuesday
-			.accordion-content
-				p Accordion Content 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		.accordion-item(@click="toggleAccordion", :class="{ 'is-open': isOpen }", data-hash="item04")
-			.accordion-trigger Wednesday
-			.accordion-content
-				p Accordion Content 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		.accordion-item(@click="toggleAccordion", :class="{ 'is-open': isOpen }", data-hash="item05")
-			.accordion-trigger Thursday
-			.accordion-content
-				p Accordion Content 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		.accordion-item(@click="toggleAccordion", :class="{ 'is-open': isOpen }", data-hash="item06")
-			.accordion-trigger Friday
-			.accordion-content
-				p Accordion Content 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		.accordion-item(@click="toggleAccordion", :class="{ 'is-open': isOpen }", data-hash="item07")
-			.accordion-trigger Saturday
-			.accordion-content
-				p Accordion Content 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		accordion-item(v-for="item in data", :item="item", :key="item.title")
 </template>
 
 <script>
+import accordionItem from './accordionItem'
 export default {
 	name: 'Accordion',
+	components: {
+		accordionItem
+	},
 	data () {
 		return {
 			title: 'Accordion',
 			isOpen: false,
+			data: [
+				{title: 'Sunday', text: 'Industry Night: $3 dank beers from 6pm - Close. '},
+				{title: 'Monday', text: 'Case of the Monday\'s: Discounted off sale beer.'},
+				{title: 'Tuesday', text: 'The most pointless day of the week: $2 you-call-it from 8pm - Close.'},
+				{title: 'Wednesday', text: 'Hump Day: $4 select craft beers.'},
+				{title: 'Thursday', text: 'Thirsty Thursday: Happy Hour from 3pm - 7pm.'},
+				{title: 'Friday', text: 'The only thing special on friday is YOU!'},
+				{title: 'Saturday', text: 'Saturday brunch specials.'}
+			]
 		}
 	},
-	methods: {
-		toggleAccordion: function() {
-			console.log(this);
-			if(this.isOpen) {
-				this.isOpen = false;
-			} else {
-				this.isOpen = true;
-			}
-		}
-	}
 }
 </script>
