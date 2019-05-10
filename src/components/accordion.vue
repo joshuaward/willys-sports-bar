@@ -13,7 +13,6 @@ export default {
 	data () {
 		return {
 			title: 'Accordion',
-			isOpen: false,
 			data: [
 				{title: 'Sunday', text: 'Industry Night: $3 dank beers from 6pm - Close. '},
 				{title: 'Monday', text: 'Case of the Monday\'s: Discounted off sale beer.'},
