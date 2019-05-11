@@ -10,7 +10,9 @@
 						h1.intro-heading Welcome
 						h3.intro-subheading Our cocktail menu is inspired by vintage and contemporary recipes
 						p Located in midtown and inspired by each city block, Bar embodies the energy of New York with the laid back atmosphere of living room.
-						a.button.button-primary.button-info(href="/about") More Info
+						a.button.button-primary(href="#0")
+							span More Info
+							i.fas.fa-info-circle
 					.cell.medium-6
 						Carousel.intro-home
 		Testimonials.home
@@ -22,14 +24,11 @@
 			Accordion
 		section.cards
 			.grid-container
-				.grid-x
-					.cell.medium-6.large-4
-						Card(v-bind:title="Hi")
-					.cell.medium-6.large-4
-						Card
-					.cell.medium-12.large-4
-						Card
+				.grid-x.grid-padding-x
+					.cell.medium-6.large-4(v-for="item in cards")
+						Card(:item="item", :key="item.title")
 		Subscribe
+		img(src="/img/carousel-1.jpg")
 </template>
 
 <script>
@@ -54,6 +53,23 @@ export default {
 	},
 	data() {
 		return {
+			cards: [
+				{
+					image: './assets/img/carousel-1.jpg',
+					title: 'Craft Beer',
+					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
+				},
+				{
+					image: './assets/img/carousel-3.jpg',
+					title: 'Original Drinks',
+					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
+				},
+				{
+					image: './assets/img/carousel-2.jpg',
+					title: 'Delicious Food',
+					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
+				}
+			]
 		};
 	}
 }

@@ -610,4 +610,7 @@
 	.docs & {
 		margin-right: 0.5rem;
 	}
+	> i {
+		margin-left: $spacer;
+	}
 }

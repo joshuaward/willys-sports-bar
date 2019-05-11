@@ -19,9 +19,9 @@ export default {
 		return {
 			title: 'Carousel',
 			items: [
-				'https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80',
-				'https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-				'https://images.pexels.com/photos/1268558/pexels-photo-1268558.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+				'/assets/img/carousel-1.jpg',
+				'/assets/img/carousel-2.jpg',
+				'/assets/img/carousel-3.jpg'
 			],
 			currentNumber: 0,
 			timer: null

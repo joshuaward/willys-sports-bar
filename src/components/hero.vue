@@ -1,5 +1,5 @@
 <template lang="pug">
-	section.hero.plax-1
+	section.hero
 		.grid-container.full
 			.grid-x
 				.cell.hours
@@ -12,16 +12,17 @@
 						li Saturday: 10:00 am - 2:00 am
 					.hours-happy
 						h4 Happy Hour Mon - Fri 4:00pm - 7:00pm
-		scrollTop
+		.plax.plax-1
+		scrollDown
 </template>
 
 <script>
-import scrollTop from '@/components/scrollTop';
+import scrollDown from '@/components/scrollDown';
 
 export default {
 	name: 'hero',
 	components: {
-		scrollTop,
+		scrollDown,
 	}
 }
 </script>
