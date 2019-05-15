@@ -8,9 +8,8 @@
 			.grid-x
 				.cell
 					input.subscribe-input(type="text", placeholder="email address")
-					button.subscribe-submit(type="submit") Submit
-		.subscribe-bg
-			img(src="@/assets/img/carousel-1.jpg")
+					button.subscribe-submit.button.button-full.button-secondary(type="submit") Sign Up
+		.subscribe-bg(:style="{ backgroundImage: `url(${bgImage})` }")
 </template>
 
 <script>
@@ -18,7 +17,8 @@
 		name: 'Subscribe',
 		data() {
 			return {
-				title: 'join the mailing list'
+				title: 'join the mailing list',
+				bgImage: require('@/assets/img/subscribe-bg.jpg'),
 			}
 		}
 	}

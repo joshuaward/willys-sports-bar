@@ -25,3 +25,5 @@ document.addEventListener('scroll', () => {
 	four.style.bottom = (-(top * 0.4) + 'px');
 	five.style.bottom = (-(top * 0.5) + 'px');
 });
+
+// window['myGlobal'] = process.env.NODE_ENV

@@ -6,8 +6,8 @@
 	margin: 0 0 1rem 0;
 	padding: 0.625rem 1.25rem;
 	background-color: $gray;
-	border: 0;
-	border-radius: 0.25rem;
+	border: 0.125rem solid $gray;
+	border-radius: 0;
 	color: $white;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -20,8 +20,8 @@
 	vertical-align: middle;
 	&:hover {
 		background-color: lighten($gray,10%);
-		border: 0.0625rem solid lighten($gray,10%);
-		color: $white;
+		border: 0.125rem solid lighten($gray,10%);
+		// color: $white;
 	}
 	&:disabled,
 	&[disabled] {
@@ -31,567 +31,39 @@
 			cursor: not-allowed;
 		}
 	}
-	&--clear {
-		padding: 0.125rem;
-		background-color: transparent;
-		border: none;
-		color: $gray;
-		&:before {
-			position: absolute;
-			content: '';
-			bottom: 0;
-			left: 0;
-			width: 0%;
-			height: 0.0625rem;
-			background-color: $gray;
-			transition: width $base-duration linear;
-		}
-		&:hover {
-			background-color: transparent;
-			border: none;
-			color: darken($gray,15%);
-			&:before {
-				width: 100%;
-			}
-		}
-	}
-	&--block {
-		padding: 0.125rem;
-		background-color: transparent;
-		border: none;
-		color: $gray;
-		font-weight: 700;
-		&:before {
-			position: absolute;
-			content: '';
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 0%;
-			background-color: $gray;
-			transition: height $base-duration linear;
-			z-index: -1;
-		}
-		&:hover {
-			background-color: transparent;
-			border: none;
-			color: $white;
-			&:before {
-				height: 100%;
-			}
-		}
-	}
-	&--hollow {
-		background-color: transparent;
-		border: 0.0625rem solid $gray;
-		color: $gray;
-	}
 	&-primary {
 		background-color: $primary;
-		border: 0.0625rem solid $primary;
+		border: 0.125rem solid $primary;
 		&:hover {
-			background-color: lighten($primary,5%);
-			border: 0.0625rem solid lighten($primary,5%);
-		}
-		&--disabled {
-			background-color: lighten($primary,25%) !important;
-			border: 0.0625rem solid lighten($primary,25%) !important;
-		}
-		&--clear {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $primary;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 0%;
-				height: 0.0625rem;
-				background-color: $primary;
-				transition: width $base-duration linear;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: darken($primary,15%);
-				&:before {
-					width: 100%;
-				}
-			}
-		}
-		&--block {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $primary;
-			font-weight: 700;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 0%;
-				background-color: $primary;
-				transition: height $base-duration linear;
-				z-index: -1;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: $white;
-				&:before {
-					height: 100%;
-				}
-			}
-		}
-		&--hollow {
-			background-color: transparent;
-			border: 0.0625rem solid $primary;
-			color: $primary;
-			&:hover {
-				background-color: $primary;
-				border: 0.0625rem solid $primary;
-			}
+			background-color: lighten($primary,10%);
+			border: 0.125rem solid lighten($primary,10%);
 		}
 	}
 	&-secondary {
 		background-color: $secondary;
-		border: 0.0625rem solid $secondary;
+		border: 0.125rem solid $secondary;
+		color: $primary;
 		&:hover {
-			background-color: lighten($secondary,5%);
-			border: 0.0625rem solid lighten($secondary,5%);
-		}
-		&--disabled {
-			background-color: lighten($secondary,25%) !important;
-			border: 0.0625rem solid lighten($secondary,25%) !important;
-		}
-		&--clear {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $secondary;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 0%;
-				height: 0.0625rem;
-				background-color: $secondary;
-				transition: width $base-duration linear;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: darken($secondary,15%);
-				&:before {
-					width: 100%;
-				}
-			}
-		}
-		&--block {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $secondary;
-			font-weight: 700;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 0%;
-				background-color: $secondary;
-				transition: height $base-duration linear;
-				z-index: -1;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: $white;
-				&:before {
-					height: 100%;
-				}
-			}
-		}
-		&--hollow {
-			background-color: transparent;
-			border: 0.0625rem solid $secondary;
-			color: $secondary;
-			&:hover {
-				background-color: $secondary;
-				border: 0.0625rem solid $secondary;
-			}
+			background-color: lighten($secondary,10%);
+			border: 0.125rem solid lighten($secondary,10%);
 		}
 	}
 	&-accent {
 		background-color: $accent;
-		border: 0.0625rem solid $accent;
-		&:hover {
-			background-color: lighten($accent,5%);
-			border: 0.0625rem solid lighten($accent,5%);
-		}
-		&--disabled {
-			background-color: lighten($accent,25%) !important;
-			border: 0.0625rem solid lighten($accent,25%) !important;
-		}
-		&--clear {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $accent;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 0%;
-				height: 0.0625rem;
-				background-color: $accent;
-				transition: width $base-duration linear;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: darken($accent,15%);
-				&:before {
-					width: 100%;
-				}
-			}
-		}
-		&--hollow {
-			background-color: transparent;
-			border: 0.0625rem solid $accent;
-			color: $accent;
-			&:hover {
-				background-color: $accent;
-				border: 0.0625rem solid $accent;
-			}
-		}
-		&--block {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $accent;
-			font-weight: 700;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 0%;
-				background-color: $accent;
-				transition: height $base-duration linear;
-				z-index: -1;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: $white;
-				&:before {
-					height: 100%;
-				}
-			}
-		}
-	}
-	&-success {
-		background-color: $success;
-		border: 0.0625rem solid $success;
-		&:hover {
-			background-color: lighten($success,5%);
-			border: 0.0625rem solid lighten($success,5%);
-		}
-		&--disabled {
-			background-color: lighten($success,25%) !important;
-			border: 0.0625rem solid lighten($success,25%) !important;
-		}
-		&--clear {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $success;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 0%;
-				height: 0.0625rem;
-				background-color: $success;
-				transition: width $base-duration linear;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: darken($success,15%);
-				&:before {
-					width: 100%;
-				}
-			}
-		}
-		&--hollow {
-			background-color: transparent;
-			border: 0.0625rem solid $success;
-			color: $success;
-			&:hover {
-				background-color: $success;
-				border: 0.0625rem solid $success;
-			}
-		}
-		&--block {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $success;
-			font-weight: 700;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 0%;
-				background-color: $success;
-				transition: height $base-duration linear;
-				z-index: -1;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: $white;
-				&:before {
-					height: 100%;
-				}
-			}
-		}
-	}
-	&-info {
-		padding-right: 3.75rem;
+		border: 0.125rem solid $accent;
 		color: $secondary;
-		&:after {
-			position: absolute;
-			content: "\f05a";
-			font-weight: 900;
-			top: 50%;
-			right: 1.25rem;
-			font-family: $awesome;
-			transform: translateY(-50%);
-		}
 		&:hover {
-			background-color: lighten($info,5%);
-			border: 0.0625rem solid lighten($info,5%);
-		}
-		&--disabled {
-			background-color: lighten($info,25%) !important;
-			border: 0.0625rem solid lighten($info,25%) !important;
-		}
-		&--clear {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $info;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 0%;
-				height: 0.0625rem;
-				background-color: $info;
-				transition: width $base-duration linear;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: darken($info,15%);
-				&:before {
-					width: 100%;
-				}
-			}
-		}
-		&--hollow {
-			background-color: transparent;
-			border: 0.0625rem solid $info;
-			color: $info;
-			&:hover {
-				background-color: $info;
-				border: 0.0625rem solid $info;
-			}
-		}
-		&--block {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $info;
-			font-weight: 700;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 0%;
-				background-color: $info;
-				transition: height $base-duration linear;
-				z-index: -1;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: $white;
-				&:before {
-					height: 100%;
-				}
-			}
+			background-color: lighten($accent,10%);
+			border: 0.125rem solid lighten($accent,10%);
 		}
 	}
-	&-warning {
-		background-color: $warning;
-		border: 0.0625rem solid $warning;
-		&:hover {
-			background-color: lighten($warning,5%);
-			border: 0.0625rem solid lighten($warning,5%);
-		}
-		&--disabled {
-			background-color: lighten($warning,25%) !important;
-			border: 0.0625rem solid lighten($warning,25%) !important;
-		}
-		&--clear {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $warning;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 0%;
-				height: 0.0625rem;
-				background-color: $warning;
-				transition: width $base-duration linear;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: darken($warning,15%);
-				&:before {
-					width: 100%;
-				}
-			}
-		}
-		&--hollow {
-			background-color: transparent;
-			border: 0.0625rem solid $warning;
-			color: $warning;
-			&:hover {
-				background-color: $warning;
-				border: 0.0625rem solid $warning;
-			}
-		}
-		&--block {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $warning;
-			font-weight: 700;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 0%;
-				background-color: $warning;
-				transition: height $base-duration linear;
-				z-index: -1;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: $white;
-				&:before {
-					height: 100%;
-				}
-			}
-		}
-	}
-	&-alert {
-		background-color: $alert;
-		border: 0.0625rem solid $alert;
-		&:hover {
-			background-color: lighten($alert,5%);
-			border: 0.0625rem solid lighten($alert,5%);
-		}
-		&--disabled {
-			background-color: lighten($alert,25%) !important;
-			border: 0.0625rem solid lighten($alert,25%) !important;
-		}
-		&--clear {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $alert;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 0%;
-				height: 0.0625rem;
-				background-color: $alert;
-				transition: width $base-duration linear;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: darken($alert,15%);
-				&:before {
-					width: 100%;
-				}
-			}
-		}
-		&--hollow {
-			background-color: transparent;
-			border: 0.0625rem solid $alert;
-			color: $alert;
-			&:hover {
-				background-color: $alert;
-				border: 0.0625rem solid $alert;
-			}
-		}
-		&--block {
-			padding: 0.125rem;
-			background-color: transparent;
-			border: none;
-			color: $alert;
-			font-weight: 700;
-			&:before {
-				position: absolute;
-				content: '';
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 0%;
-				background-color: $alert;
-				transition: height $base-duration linear;
-				z-index: -1;
-			}
-			&:hover {
-				background-color: transparent;
-				border: none;
-				color: $white;
-				&:before {
-					height: 100%;
-				}
-			}
-		}
-	}
+	&-success {}
+	&-info {}
+	&-warning {}
+	&-alert {}
+
+
+
 	&-small {
 		padding: 0.3125rem 0.9375rem;
 		font-size: 0.75rem;
@@ -606,11 +78,5 @@
 	}
 	&-full {
 		width: 100%;
-	}
-	.docs & {
-		margin-right: 0.5rem;
-	}
-	> i {
-		margin-left: $spacer;
 	}
 }
