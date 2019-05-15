@@ -19,9 +19,9 @@ export default {
 		return {
 			title: 'Carousel',
 			items: [
-				'/assets/img/carousel-1.jpg',
-				'/assets/img/carousel-2.jpg',
-				'/assets/img/carousel-3.jpg'
+				require('@/assets/img/carousel-1.jpg'),
+				require('@/assets/img/carousel-2.jpg'),
+				require('@/assets/img/carousel-3.jpg')
 			],
 			currentNumber: 0,
 			timer: null

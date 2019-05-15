@@ -6,6 +6,12 @@
 	line-height: 1.75;
 	overflow: hidden;
 	&-header {
+		height: 215px;
+		overflow: hidden;
+		> img {
+			object-fit: cover;
+			object-position: 50% 100%;
+		}
 	}
 	&-content {
 		padding: 20px;

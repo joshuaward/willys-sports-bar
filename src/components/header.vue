@@ -33,17 +33,20 @@ export default {
 	},
 	methods: {
 		toggleMenu() {
+			var b = document.querySelector('body');
 			if(this.isActive) {
 				this.isActive = false;
+				b.classList.remove('active');
 			} else {
 				this.isActive = true;
+				b.classList.add('active');
 			}
 		},
 		handleScroll() {
-      if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
+			if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
 				this.scrolled = true;
-      } 
-      if (this.lastPosition > window.scrollY) {
+			} 
+			if (this.lastPosition > window.scrollY) {
 				this.scrolled = false;
 			}
 			if (window.scrollY > this.top) {
@@ -56,10 +59,10 @@ export default {
     }
 	},
 	created() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
+		window.addEventListener("scroll", this.handleScroll);
+	},
+	destroyed() {
+		window.removeEventListener("scroll", this.handleScroll);
+	}
 }
 </script>

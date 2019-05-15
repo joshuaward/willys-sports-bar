@@ -28,7 +28,6 @@
 					.cell.medium-6.large-4(v-for="item in cards")
 						Card(:item="item", :key="item.title")
 		Subscribe
-		img(src="/img/carousel-1.jpg")
 </template>
 
 <script>
@@ -55,17 +54,17 @@ export default {
 		return {
 			cards: [
 				{
-					image: './assets/img/carousel-1.jpg',
+					image: require('@/assets/img/card-craft-beer.jpg'),
 					title: 'Craft Beer',
 					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
 				},
 				{
-					image: './assets/img/carousel-3.jpg',
+					image: require('@/assets/img/card-original-drinks.jpg'),
 					title: 'Original Drinks',
 					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
 				},
 				{
-					image: './assets/img/carousel-2.jpg',
+					image: require('@/assets/img/card-delicious-food.jpg'),
 					title: 'Delicious Food',
 					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
 				}
