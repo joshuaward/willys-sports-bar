@@ -1,14 +1,15 @@
 <template lang="pug">
 	header.header(:class="{'header-unsticky': scrolled, 'header-sticky': background}",  v-on="handleScroll()")
 		.grid-container
-			.grid-x.align-justify
-				.cell.logo
-					router-link(to="/")
+			.grid-x.align-justify.align-middle
+				.cell.auto
+					router-link.logo(to="/")
 						span.rye.colorWhite Willy's 
 						span.variane.colorSecondary Sportsbar
 						span.colorPrimary & Casino
-				button.hamburger(@click="toggleMenu()", :class="{ active: isActive }")
-					span
+				.cell.auto
+					button.hamburger(@click="toggleMenu()", :class="{ active: isActive }")
+						span
 				Navigation(:class="{ active: isActive }")
 </template>
 

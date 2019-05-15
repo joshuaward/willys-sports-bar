@@ -1,0 +1,20 @@
+.logo {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: $spacer/2 0 $spacer/1.5;
+	line-height: 1.5;
+	z-index: 0;
+	.rye, .variane {
+		font-size: 2rem;
+	}
+	> span {
+		&:last-child {
+			position: absolute;
+			bottom: 0;
+			font-size: 0.75rem;
+			transform: translateX(-3.3125rem);
+			white-space: nowrap;
+		}
+	}
+}

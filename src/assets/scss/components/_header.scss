@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 0 0 0.625rem;
+	padding: 0;
 	background-color: transparent;
 	will-change: transform;
 	transform: translateY(0%);
@@ -15,42 +15,17 @@
 	// &-unsticky {
 	// 	transform: translateY(-100%);
 	// }
-	.logo {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		// width: 1.5625rem;
-		// height: 1.5625rem;
-		margin: 0.625rem 0;
-		transform: translateY(0.125rem);
-		z-index: 0;
-		a {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			.rye, .variane {
-				font-size: 2rem;
-			}
-			> span {
-				&:last-child {
-					position: absolute;
-					bottom: -0.75rem;
-					transform: translateX(-3.3125rem);
-				}
-			}
-		}
-	}
 
 	.hamburger {
-		position: absolute;
-		right: 0;
-		top: 1.25rem;
+		position: relative;
+		// right: 0;
+		// top: 1.25rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin: auto 0;
 		width: 2.1875rem;
-		height: 2.1875rem;
+		height: 1.5rem;
 		padding: 0.1875rem;
 		background-color: transparent;
 		border: none;
