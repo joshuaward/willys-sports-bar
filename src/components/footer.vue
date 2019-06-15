@@ -32,10 +32,9 @@
 
 <script>
 export default {
-  name: "Footer",
+	name: 'Footer',
   data() {
     return {
-			title: '',
 			date: new Date().getFullYear(),
     };
   }

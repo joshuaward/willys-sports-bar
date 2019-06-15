@@ -1,5 +1,5 @@
 <template lang="pug">
-	nav#nav.rye
+	nav#nav.nav.rye
 		ul 
 			li.nav-link
 				router-link(to="/", @click="toggleMenu()") Home
@@ -25,11 +25,10 @@ export default {
 	name: 'navigation',
 	data () {
 		return {
-			title: 'Navigation',
 		}
 	},
 	methods: {
-			
+		
 	}
 }
 </script>

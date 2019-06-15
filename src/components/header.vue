@@ -35,6 +35,9 @@ export default {
 	methods: {
 		toggleMenu() {
 			var b = document.querySelector('body');
+			const links = document.querySelectorAll('.nav-link > a')
+			const nav = document.querySelector('#nav')
+			const hamburger = document.querySelector('.hamburger')
 			if(this.isActive) {
 				this.isActive = false;
 				b.classList.remove('active');
@@ -42,6 +45,11 @@ export default {
 				this.isActive = true;
 				b.classList.add('active');
 			}
+			links.forEach(link => link.addEventListener('click', () => {
+				nav.classList.toggle('active');
+				hamburger.classList.toggle('active');
+				b.classList.toggle('active');
+			}))
 		},
 		handleScroll() {
 			if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
@@ -67,3 +75,8 @@ export default {
 	}
 }
 </script>
+
+
+// closeOnClick: function() {
+	
+// }

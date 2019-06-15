@@ -25,9 +25,6 @@ export default {
 	},
 	data() {
 		return {
-			data: [
-				{title: ''}
-			]
 		}
 	},
 	props: [

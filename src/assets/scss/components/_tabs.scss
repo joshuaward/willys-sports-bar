@@ -12,18 +12,20 @@
 		justify-content: center;
 		flex: 1 0 auto;
 		margin: 0;
-		padding: 1rem;
+		padding: 11px $spacer $spacer;
 		background-color: $accent;
+		border-top: 5px solid $accent;
 		font-weight: bold;
 		transition: 100ms linear all;
 		cursor: pointer;
 		&--active {
 			background-color: $white;
+			border-top: 5px solid $primary;
 			color: $primary;
 		}
 	}
 	&-content {
-		padding: 1rem;
+		padding: 0;
 		background-color: $white;
 	}
 }

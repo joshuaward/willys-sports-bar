@@ -14,6 +14,7 @@
 
 <script>
 	export default {
+		name: 'accordion-item',
 		data() {
 			return {
 				open: false,

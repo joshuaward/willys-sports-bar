@@ -1,0 +1,74 @@
+.menu {
+	&-section {
+		padding-top: $spacer*3;
+		padding-bottom: $spacer*3;
+	}
+	&-title {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		h2 {
+			margin-right: $spacer;
+			line-height: 1;
+		}
+		span {
+			margin-bottom: 6px;
+		}
+		small {
+			margin-bottom: 6px;
+			line-height: 1.25;
+		}
+		&--underline {
+			&:after {
+				position: absolute;
+				top: 40px;
+				content: '';
+				width: 100%;
+				height: 1px;
+				background-color: rgba($white,0.5);
+				z-index: 0;
+			}
+		}
+		&Price {
+			font-weight: 500;
+		}
+	}
+	&-item {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: $spacer*1.25;
+		&Name,
+		&Price {
+			margin-bottom: $spacer*0.25;
+		}
+		&Name {
+			flex: 1 0 auto;
+			color: $primary;
+			font-weight: 700;
+		}
+		&Price {
+			flex: 0 1 auto;
+			font-weight: 900;
+		}
+		&Description {
+			flex: 1 0 100%;
+		}
+		.menu-primary & {
+			&Name,
+			&Price,
+			&Description {
+				color: $white;
+			}
+		}
+	}
+
+	&-primary {
+		padding-top: $spacer*2;
+		padding-bottom: $spacer*2;
+		background-color: $primary;
+		border-top: 4px dashed $secondary;
+		border-bottom: 4px dashed $secondary;
+	}
+}
