@@ -1,6 +1,40 @@
-footer {
+.footer {
+	color: $white;
 	background-color: $black-light;
 	.logo {
 		margin-bottom: $spacer;
+	}
+	&-address {
+		margin-bottom: $spacer;
+		border-bottom: 2px solid rgba($gray-lighter,0.4);
+	}
+	&-contact {
+		margin-bottom: $spacer;
+		border-bottom: 2px solid rgba($gray-lighter,0.4);
+		p {
+			&:first-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&-links {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 0 $spacer/2;
+		padding: 0;
+		list-style: none;
+		
+	}
+	&-link {
+		> a {
+			color: $white;
+		}
+	}
+	&-copyright {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: $spacer 0;
 	}
 }

@@ -57,6 +57,10 @@
 			border: 0.125rem solid lighten($accent,10%);
 		}
 	}
+	i {
+		margin-top: -2px;
+		margin-left: $spacer*0.75;
+	}
 	&-success {}
 	&-info {}
 	&-warning {}

@@ -21,6 +21,10 @@
 		background-color: rgba($black,0.75);
 		z-index: -1;
 	}
+	.title h1 {
+		margin-bottom: $spacer;
+		color: $primary;
+	}
 	.plax {
 		position: absolute;
 		bottom: 0;
@@ -71,6 +75,17 @@
 		}
 		&-happy {
 			color: $primary;
+		}
+	}
+	.home & {
+		.title {
+			display: none;
+		}
+	}
+	.menu & {
+		height: 35vh;
+		.hours {
+			display: none;
 		}
 	}
 }

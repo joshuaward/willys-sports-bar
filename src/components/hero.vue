@@ -2,6 +2,8 @@
 	section.hero
 		.grid-container.full
 			.grid-x
+				.cell.title
+					h1 {{ title }}
 				.cell.hours
 					h3 Hours
 					ul.hours-list
@@ -13,16 +15,23 @@
 					.hours-happy
 						h4 Happy Hour Mon - Fri 4:00pm - 7:00pm
 		.plax.plax-1
-		scrollDown
 </template>
 
 <script>
-import scrollDown from '@/components/scrollDown';
 
 export default {
 	name: 'hero',
 	components: {
-		scrollDown,
-	}
+	},
+	data() {
+		return {
+			data: [
+				{title: ''}
+			]
+		}
+	},
+	props: [
+		'title'
+	]
 }
 </script>

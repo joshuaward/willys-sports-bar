@@ -1,6 +1,6 @@
 <template lang="pug">
 	main.home
-		Hero
+		Hero(:title="title")
 		PromoBanner
 		section.intro.intro-home
 			.grid-container
@@ -52,6 +52,7 @@ export default {
 	},
 	data() {
 		return {
+			title: 'Home',
 			cards: [
 				{
 					image: require('@/assets/img/card-craft-beer.jpg'),
