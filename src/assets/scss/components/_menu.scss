@@ -55,6 +55,9 @@
 		&Description {
 			flex: 1 0 100%;
 		}
+		&--between {
+			justify-content: space-between;
+		}
 		.menu-primary & {
 			&Name,
 			&Price,

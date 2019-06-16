@@ -106,6 +106,15 @@
 					.menu-itemName Shrimp
 					.menu-itemPrice $10.49
 					.menu-itemDescription Golden breaded shrimp served with cocktail sauce.
+		.grid-container.menu-section
+			.grid-x
+				.cell.menu-title.mb-2
+					h2.variane.colorPrimary Quesadillas
+				.cell.medium-6.menu-item.menu-item--between
+					p Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
+					.menu-flexItem #[strong Veggie] $7.99
+					.menu-flexItem #[strong Chicken] $10.99
+					.menu-flexItem #[strong Philly] $10.99
 </template>
 	
 <script>
