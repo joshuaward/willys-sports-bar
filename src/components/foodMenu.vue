@@ -106,7 +106,7 @@
 					.menu-itemName Shrimp
 					.menu-itemPrice $10.49
 					.menu-itemDescription Golden breaded shrimp served with cocktail sauce.
-		.grid-container.menu-section
+		.grid-container.menu-section.pb-4
 			.grid-x
 				.cell.menu-title.mb-2
 					h2.variane.colorPrimary Quesadillas
@@ -115,6 +115,18 @@
 					.menu-flexItem #[strong Veggie] $7.99
 					.menu-flexItem #[strong Chicken] $10.99
 					.menu-flexItem #[strong Philly] $10.99
+		.grid-container.menu-primary.menu-primary--noBorder
+			.grid-x
+				.cell.menu-preHeader
+					h2 1/3
+					p LB Grilled Angus Beef
+						span Make it a #[strong DELUXE] for a $1.00 more
+				.cell.menu-title.mt-3
+					h2.variane.colorWhite.mb-2 Burgers
+				.cell.medium-6.menu-item
+					.menu-itemName Jalapeño Cheddar Poppers
+					.menu-itemPrice $8.49
+					.menu-itemDescription Full-flavored Cheddar cheese and spicy diced jalapeño in crispy potato breading.
 </template>
 	
 <script>
