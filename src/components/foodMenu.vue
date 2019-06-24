@@ -124,9 +124,97 @@
 				.cell.menu-title.mt-3
 					h2.variane.colorWhite.mb-2 Burgers
 				.cell.medium-6.menu-item
-					.menu-itemName Jalapeño Cheddar Poppers
+					.menu-itemName Hamburger
 					.menu-itemPrice $8.49
-					.menu-itemDescription Full-flavored Cheddar cheese and spicy diced jalapeño in crispy potato breading.
+					.menu-itemDescription Grilled angus burger on a toasted bun with pickles on the side.
+				.cell.medium-6.menu-item
+					.menu-itemName Bacon Cheese Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burger served with melted cheese and crispy bacon on a toasted bun. 
+				.cell.medium-6.menu-item
+					.menu-itemName Tex-Mex Burger
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus biurger with grilled jalapeños, BBQ sauce, bacon and spicy pepperjack cheese.
+				.cell.medium-6.menu-item
+					.menu-itemName Russian Burger
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger with grilled mushrooms and onions, sour cream, topped with melted Swiss cheese on a toasted bun.
+				.cell.medium-6.menu-item
+					.menu-itemName Mushroom &amp; Swiss Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription This is a mushroom lover's dream a 1/3 lb Angus beef patty loaded with fresh sauteed mushrooms and creamy Swiss cheese.
+				.cell.medium-6.callout-menu.callout-menu--basic
+					p All burgers are served with your choice of fries, tater tots or side salad. Substitute steak fries, onion rings or sweet potato fires for only $1.50.
+				.cell.medium-6.menu-item
+					.menu-itemName Ranch Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burger with creamy ranch dressing, crispy bacon topped with melted Swiss cheese on a toasted bun.
+				.cell.medium-6.menu-item
+					.menu-itemName Patty Melt
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burger served on grilled wheat bread with sauteed onions and melted Swiss Cheese.
+				.cell.medium-6.menu-item
+					.menu-itemName German Patty Melt
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger piled high with grilled onions and sauerkraut. Topped with melted Swiss cheese on a toasted bun.
+				.cell.medium-6.menu-item
+					.menu-itemName Texas Patty Melt
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger smothered in jalapeños, BBQ sauce and spicy pepperjack cheese served on a grilled white bread.
+				.cell.medium-6.menu-item
+					.menu-itemName Bacon Bleu Cheese Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burger topped with melted bleu cheese and double smoked bacon on a toasted bun.
+				.cell.medium-6.menu-item
+					.menu-itemName Frisco Burger
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger topped with sauteed mushrooms and onions, bacon, American and Swiss cheese on a frisco style bun.
+				.cell.medium-6.menu-item
+					.menu-itemName Cheese Burger
+					.menu-itemPrice $8.99
+					.menu-itemDescription Grilled Angus burger with melted American cheese served on a toasted bun with pickles on the side.
+				.cell.medium-6.menu-item
+					.menu-itemName Grand Burger
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger topped with a fried egg, American cheese and double smoked bacon on a toasted bun.
+				.cell.medium-6.menu-item
+					.menu-itemName Haystack Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burger topped with seasoned onion straws held together with melted American cheese and BBQ sauce.
+				.cell.medium-6.menu-item
+					.menu-itemName Barn Burner Burger
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger topped with onion straws, crispy bacon and held together with spicy pepperjack cheeseand our southwest sauce.
+				.cell.medium-6.menu-item
+					.menu-itemName Garlic Cheese Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burger covered in garlic herb seasoning, garlic mayo and melted Swiss cheese.
+				.cell.medium-6.menu-item
+					.menu-itemName Santa Fe Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burgerbrushed with southwest sauce, crispy bacon and spicy pepperjack cheese.
+				.cell.medium-6.menu-item
+					.menu-itemName Western Burger
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger topped with crispy bacon with seasoned onion straws held together with melted American cheese and BBQ sauce.
+				.cell.medium-6.menu-item
+					.menu-itemName Peanut Butter Burger
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger topped with double smoked bacon, cheese and peanut butter.
+				.cell.medium-6.menu-item
+					.menu-itemName 57 Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burger topped with crispy onion straws, 57 sauce and melted Swiss cheese.
+				.cell.medium-6.menu-item
+					.menu-itemName Bayou Burger
+					.menu-itemPrice $10.49
+					.menu-itemDescription Grilled Angus burger topped with crispy bacon, ,elted bleu cheese and our tangy buffalo sauce.
+				.cell.medium-6.menu-item
+					.menu-itemName Mesquite Burger
+					.menu-itemPrice $10.29
+					.menu-itemDescription Grilled Angus burger covered in a zesty mesquite sauce and melted pepperjack cheese.
+		.scroller
+			i.fas.fa-chevron-down
 </template>
 	
 <script>

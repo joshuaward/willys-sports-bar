@@ -1,15 +1,26 @@
 .callout-menu {
 	position: relative;
 	display: block;
-	width: 100vw;
-	order: 12;
-	margin-top: $spacer*1.25;
-	//margin-bottom: $spacer*1.25;
-	margin-left: -0.9375rem;
-	margin-right: -0.9375rem;
 	padding: $spacer;
 	&--yellow {
+		order: 12;
+		width: 100vw;
+		margin-top: $spacer*1.25;
+		//margin-bottom: $spacer*1.25;
+		margin-left: -0.9375rem;
+		margin-right: -0.9375rem;
 		background-color: $secondary;
+	}
+	&--basic {
+		margin-bottom: $spacer*1.25;
+		background-color: $white;
+		> p { 
+			margin-bottom: 0;
+			color: $primary;
+			font-size: 0.875rem;
+			font-weight: 500;
+			line-height: 1.75;
+		}
 	}
 	.callout-title {
 		margin-bottom: $spacer*0.5;
