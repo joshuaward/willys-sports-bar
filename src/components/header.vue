@@ -8,7 +8,7 @@
 						span.variane.colorSecondary Sportsbar
 						span.colorPrimary & Casino
 				.cell.auto
-					button.hamburger(@click="toggleMenu()", :class="{ active: isActive }")
+					button.hamburger(@click.stop="toggleMenu()", :class="{ active: isActive }")
 						span
 				Navigation(:class="{ active: isActive }")
 </template>

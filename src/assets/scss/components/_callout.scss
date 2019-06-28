@@ -22,6 +22,17 @@
 			line-height: 1.75;
 		}
 	}
+	&--primary {
+		margin-bottom: $spacer*1.25;
+		background-color: $primary;
+		> p { 
+			margin-bottom: 0;
+			color: $white;
+			font-size: 0.875rem;
+			font-weight: 500;
+			line-height: 1.75;
+		}
+	}
 	.callout-title {
 		margin-bottom: $spacer*0.5;
 		color: $primary;

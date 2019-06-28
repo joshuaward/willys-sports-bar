@@ -1,7 +1,11 @@
 .menu {
 	&-section {
+		position: relative;
 		padding-top: $spacer*3;
 		padding-bottom: $spacer*3;
+		&--borderBottom {
+			border-bottom: 1px dashed $secondary;
+		}
 	}
 	&-title {
 		display: flex;
