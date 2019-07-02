@@ -75,8 +75,3 @@ export default {
 	}
 }
 </script>
-
-
-// closeOnClick: function() {
-	
-// }
