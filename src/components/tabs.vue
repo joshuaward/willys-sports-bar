@@ -8,11 +8,7 @@
 		.tabs-content(v-if="active === 0")
 			food-menu
 		.tabs-content(v-if="active === 1")
-			section.py-0
-				.grid-container.menu-section
-					.grid-x
-						.cell.menu-title
-							h2.variane.colorPrimary.mb-2 Draught Beer
+			beer-menu
 		.tabs-content(v-if="active === 2")
 			section.py-0
 				.grid-container.menu-section
@@ -23,10 +19,12 @@
 	
 <script>
 import foodMenu from './foodMenu';
+import beerMenu from './beerMenu';
 
 export default {
 	components: {
-		foodMenu
+		foodMenu,
+		beerMenu
 	},
 	data() {
 		return {
