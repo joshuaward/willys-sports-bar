@@ -1,25 +1,25 @@
 <template lang="pug">
-	section.py-0
+	section.menu-beerMenu.py-0
 		.grid-container.menu-section
 			.grid-x
 				.cell.menu-title
 					h2.variane.colorPrimary.mb-2 Draft Beers
 				.cell.medium-6.menu-item(v-for="item in draftBeer")
-					.menu-beerName {{ item.beerName }}
-					.menu-beerStyle {{ item.beerStyle }}
-					.menu-beerBrewery {{ item.beerBrewery }}
-					.menu-beerAbv {{ item.beerAbv }}
-					.menu-beerDescription {{ item.beerDescription }}
+					.menu-itemName {{ item.beerName }}
+					.menu-itemAbv {{ item.beerAbv }}
+					.menu-itemBrewery {{ item.beerBrewery }}
+					.menu-itemStyle {{ item.beerStyle }}
+					.menu-itemDescription {{ item.beerDescription }}
 		.grid-container.menu-section
 			.grid-x
 				.cell.menu-title
 					h2.variane.colorPrimary.mb-2 Bottles & Cans
 				.cell.medium-6.menu-item(v-for="item in bottleCanBeer")
-					.menu-beerName {{ item.beerName }}
-					.menu-beerBrewery {{ item.beerBrewery }}
-					.menu-beerStyle {{ item.beerStyle }}
-					.menu-beerAbv {{ item.beerAbv }}
-					.menu-beerDescription {{ item.beerDescription }}
+					.menu-itemName {{ item.beerName }}
+					.menu-itemAbv {{ item.beerAbv }}
+					.menu-itemBrewery {{ item.beerBrewery }}
+					.menu-itemStyle {{ item.beerStyle }}
+					.menu-itemDescription {{ item.beerDescription }}
 </template>
 
 <script>
@@ -188,7 +188,7 @@ export default {
 					"beerBrewery": "Pabst Brewing Co.",
 					"beerStyle": "Lager",
 					"beerAbv": "3.8%",
-					"beerDescription": "XXX"
+					"beerDescription": "What your grandpa used to drink before you knew what beer was."
 				},
 				{
 					"id": 7,

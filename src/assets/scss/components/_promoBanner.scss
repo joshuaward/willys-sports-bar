@@ -16,4 +16,13 @@
 			color: $white;
 		}
 	}
+	.about & {
+		background-color: $accent;
+		h3 {
+			color: $secondary;
+		}
+		p {
+			color: $white;
+		}
+	}
 }

@@ -35,12 +35,21 @@
 // fill colors
 .fillPrimary {
 	background-color: $primary !important;
+	p {
+		color: $white;
+	}
 }
 .fillSecondary {
 	background-color: $secondary !important;
+	p {
+		color: $accent;
+	}
 }
 .fillAccent {
 	background-color: $accent !important;
+	p {
+		color: $white;
+	}
 }
 
 // margin helpers

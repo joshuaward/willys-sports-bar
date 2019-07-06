@@ -82,7 +82,8 @@
 			display: none;
 		}
 	}
-	.menu & {
+	.menu &,
+	.about & {
 		height: 35vh;
 		.hours {
 			display: none;

@@ -1,5 +1,5 @@
 <template lang="pug">
-	section.py-0
+	section.menu-foodMenu.py-0
 		.grid-container.menu-section
 			.grid-x
 				.cell.menu-title

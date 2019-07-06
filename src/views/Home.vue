@@ -53,6 +53,7 @@ export default {
 	data() {
 		return {
 			title: 'Home',
+			bgImage: require('@/assets/img/subscribe-bg.jpg'),
 			cards: [
 				{
 					image: require('@/assets/img/card-craft-beer.jpg'),

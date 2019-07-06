@@ -1,0 +1,8 @@
+.about {
+
+	&-content {
+		@media (min-width: $med) {
+			padding: $spacer;
+		}
+	}
+}

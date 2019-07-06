@@ -9,7 +9,7 @@
 				.cell
 					input.subscribe-input(type="text", placeholder="email address")
 					button.subscribe-submit.button.button-full.button-secondary(type="submit") Sign Up
-		.subscribe-bg(:style="{ backgroundImage: `url(${bgImage})` }")
+		.subscribe-bg(:style="{ backgroundImage: `url(${this.bgImage})` }")
 </template>
 
 <script>

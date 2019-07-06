@@ -5,8 +5,8 @@
 				router-link(to="/", @click="toggleMenu()") Home
 			li.nav-link
 				router-link(to="/Menu", @click="toggleMenu()") Menu
-			li.nav-link
-				router-link(to="/Events", @click="toggleMenu()") Events
+			//- li.nav-link
+			//- 	router-link(to="/Events", @click="toggleMenu()") Events
 			li.nav-link
 				router-link(to="/About", @click="toggleMenu()") About
 			li.nav-link

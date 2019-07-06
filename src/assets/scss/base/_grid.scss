@@ -1,6 +1,7 @@
 // grid shtuff
 .grid-container {
 	width: 100%;
+	max-width: 75rem;
 	margin: 0 auto;
 	padding: 0 1rem;
 	@media (min-width: $med) {
@@ -248,7 +249,26 @@
 			width: 91.666612%; 
 		}
 	}
-
+	&.order {
+		&-sm {
+			&-1 {
+				order: 1;
+			}
+			&-2 {
+				order: 2;
+			}
+		}
+		&-md {
+			@media (min-width: $med) {
+				&-1 {
+					order: 1;
+				}
+				&-2 {
+					order: 2;
+				}
+			}
+		}
+	}
 	&.align-self-right {
 		display: flex;
 		justify-content: flex-end;

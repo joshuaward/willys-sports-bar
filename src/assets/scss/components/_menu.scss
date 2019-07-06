@@ -52,7 +52,8 @@
 			color: $primary;
 			font-weight: 700;
 		}
-		&Price {
+		&Price,
+		&Abv {
 			flex: 0 1 auto;
 			font-weight: 900;
 		}
@@ -105,6 +106,31 @@
 		border-bottom: 4px dashed $secondary;
 		&--noBorder {
 			border: 0;
+		}
+	}
+	&-beerMenu {
+		.menu-item {
+			// margin-bottom: $spacer;
+			&Name,
+			&Brewery {
+				flex: 0 0 60%;
+			}
+			&Name,
+			&Abv, {
+				margin-bottom: 0;
+			}
+			&Abv,
+			&Style {
+				flex: 0 0 40%;
+				text-align: right;
+			}
+			&Brewery,
+			&Style {
+				margin-bottom: $spacer/2;
+				color: $gray-light;
+				font-size: 0.875rem;
+				font-style: italic;
+			}
 		}
 	}
 }
