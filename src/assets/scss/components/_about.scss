@@ -1,8 +1,21 @@
 .about {
-
+	&-image,
 	&-content {
-		@media (min-width: $med) {
-			padding: $spacer;
+		border-radius: 10px;
+		box-shadow: 0 0 1rem rgba($black,0.2);
+	}
+	&-image {
+		height: 13.4375rem;
+		margin-bottom: $spacer;
+		overflow: hidden;
+	}
+	&-content {
+		padding: $spacer;
+		background-color: rgba($white,0.1);
+		@media (min-width: $med) {}
+		p {
+			margin-bottom: 0;
+			line-height: 1.65;
 		}
 	}
 }
