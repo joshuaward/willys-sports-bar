@@ -1,7 +1,10 @@
 <template lang="pug">
 	main.menu
 		Hero(:title="title")
-		Tabs
+		section
+			.grid-container
+				.grid-x.grid-padding-x
+					Tabs
 </template>
 
 <script>

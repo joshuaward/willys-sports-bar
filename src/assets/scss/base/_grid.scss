@@ -58,6 +58,10 @@
 			.cell {
 				padding-left: 0.625rem;
 				padding-right: 0.625rem;
+				@media (min-width: 768px) {
+					padding-left: 0.9375rem;
+					padding-right: 0.9375rem;
+				}
 			}
 		}
 		&.grid-margin-y {

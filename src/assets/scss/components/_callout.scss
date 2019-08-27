@@ -10,6 +10,12 @@
 		margin-left: -0.9375rem;
 		margin-right: -0.9375rem;
 		background-color: $secondary;
+		@media (min-width: 768px) {
+			margin-left: 0;
+			maregin-right: 0;
+			margin-top: 0;
+			width: 100%;
+		}
 	}
 	&--basic {
 		margin-bottom: $spacer*1.25;

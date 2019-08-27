@@ -4,7 +4,7 @@
 		PromoBanner
 		section.intro.intro-home
 			.grid-container
-				.grid-x
+				.grid-x.grid-padding-x
 					.cell.medium-6
 						h4.intro-preheading Who We Are
 						h1.intro-heading Welcome
@@ -21,13 +21,13 @@
 				.grid-x
 					.cell
 						h2.rye.textCenter.colorSecondary.mb-2 Specials
-			Accordion
+						Accordion
 		section.cards
 			.grid-container
 				.grid-x.grid-padding-x
 					.cell.medium-6.large-4(v-for="item in cards")
 						Card(:item="item", :key="item.title")
-		Subscribe
+		//- Subscribe
 </template>
 
 <script>

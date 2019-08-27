@@ -1,89 +1,101 @@
 <template lang="pug">
 	section.menu-foodMenu.py-0
 		.grid-container.menu-section
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-title
 					h2.variane.colorPrimary.mb-2 Starting Line
-				.cell.medium-6.menu-item(v-for="item in startingLine")
-					.menu-itemName {{ item.itemName }}
-					.menu-itemPrice {{ item.itemPrice }}
-					.menu-itemDescription {{ item.itemDescription }}
-				.cell.medium-6.callout-menu.callout-menu--yellow
-					.callout-inner
-						.callout-title.rye Dipping Sauces.. #[small.avenir (choose one per order)]
-						.callout-content
-							p Ranch, BBQ, Honey Mustard, Beu Cheese, Buffalo Wing Sauce or Raspberry Habanero. Extra portions $0.50.
+				.cell.medium-6(v-for="item in startingLine")
+					.menu-item
+						.menu-itemName {{ item.itemName }}
+						.menu-itemPrice {{ item.itemPrice }}
+						.menu-itemDescription {{ item.itemDescription }}
+				.cell.medium-6
+					.callout-menu.callout-menu--yellow
+						.callout-inner
+							.callout-title.rye Dipping Sauces.. #[small.avenir (choose one per order)]
+							.callout-content
+								p Ranch, BBQ, Honey Mustard, Beu Cheese, Buffalo Wing Sauce or Raspberry Habanero. Extra portions $0.50.
 		.grid-container.menu-section.menu-primary
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-title.menu-title--underline
 					h2.rye.colorWhite.mb-2 Wings #[span.variane.colorSecondary and things...]
-				.cell.medium-6.menu-item(v-for="item in wings")
-					.menu-itemName(v-html="item.itemName")
-					.menu-itemPrice {{ item.itemPrice }}
-					.menu-itemDescription {{ item.itemDescription }}
+				.cell.medium-6(v-for="item in wings")
+					.menu-item
+						.menu-itemName(v-html="item.itemName")
+						.menu-itemPrice {{ item.itemPrice }}
+						.menu-itemDescription {{ item.itemDescription }}
 		.grid-container.menu-section.menu-section--borderBottom
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-title.mb-2
 					h2.variane.colorPrimary Salads
 					span.menu-titlePrice.colorPrimary Your Choice only #[strong $9.99]
-				.cell.medium-6.menu-item(v-for="item in salads")
-					.menu-itemName {{ item.itemName }}
-					.menu-itemDescription {{ item.itemDescription }}
+				.cell.medium-6(v-for="item in salads")
+					.menu-item
+						.menu-itemName {{ item.itemName }}
+						.menu-itemDescription {{ item.itemDescription }}
 		.grid-container.menu-section.menu-section--borderBottom
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-title.mb-2
 					h2.variane.colorPrimary Baskets
-				.cell.medium-6.menu-item(v-for="item in baskets")
-					.menu-itemName {{ item.itemName }}
-					.menu-itemPrice {{ item.itemPrice }}
-					.menu-itemDescription {{ item.itemDescription }}
-				.cell.medium-6.callout-menu.callout-menu--primary
-					p All baskets served with steak fries and toast with your choice of dipping sauce
+				.cell.medium-6(v-for="item in baskets")
+					.menu-item
+						.menu-itemName {{ item.itemName }}
+						.menu-itemPrice {{ item.itemPrice }}
+						.menu-itemDescription {{ item.itemDescription }}
+				.cell.medium-6
+					.callout-menu.callout-menu--primary
+						p All baskets served with steak fries and toast with your choice of dipping sauce
 		.grid-container.menu-section.pb-5
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-title.mb-2
 					h2.variane.colorPrimary Quesadillas
-				.cell.medium-6.menu-item.menu-item--between
-					p Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
-					.menu-flexItem #[strong Veggie] $7.99
-					.menu-flexItem #[strong Chicken] $10.99
-					.menu-flexItem #[strong Philly] $10.99
+				.cell.medium-6
+					.menu-item.menu-item--between
+						p Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
+						.menu-flexItem #[strong Veggie] $7.99
+						.menu-flexItem #[strong Chicken] $10.99
+						.menu-flexItem #[strong Philly] $10.99
 		.grid-container.menu-section.menu-primary.menu-primary--noBorder.pb-3
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-preHeader
 					h2 1/3
 					p LB Grilled Angus Beef
 						span Make it a #[strong DELUXE] for a $1.00 more
 				.cell.menu-title.mt-3
 					h2.variane.colorWhite.mb-2 Burgers
-				.cell.medium-6.menu-item(v-for="item in burgers")
-					.menu-itemName {{ item.itemName }}
-					.menu-itemPrice {{ item.itemPrice }}
-					.menu-itemDescription {{ item.itemDescription }}
-				.cell.medium-6.callout-menu.callout-menu--basic
-					p All burgers are served with your choice of fries, tater tots or side salad. Substitute steak fries, onion rings or sweet potato fires for only $1.50.
+				.cell.medium-6(v-for="item in burgers")
+					.menu-item
+						.menu-itemName {{ item.itemName }}
+						.menu-itemPrice {{ item.itemPrice }}
+						.menu-itemDescription {{ item.itemDescription }}
+				.cell.medium-6
+					.callout-menu.callout-menu--basic
+						p All burgers are served with your choice of fries, tater tots or side salad. Substitute steak fries, onion rings or sweet potato fires for only $1.50.
 			.scroller
 				button(@click="scrollTo('sandwiches')")
 					i.fas.fa-chevron-down
 		.anchor(ref="sandwiches")
 		.grid-container.menu-section.menu-section--borderBottom
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-title.mb-2
 					h2.variane.colorPrimary Sandwiches
-				.cell.medium-6.menu-item(v-for="item in sandwiches")
-					.menu-itemName {{ item.itemName }}
-					.menu-itemPrice {{ item.itemPrice }}
-					.menu-itemDescription {{ item.itemDescription }}
-				.cell.medium-6.callout-menu.callout-menu--primary
-					p all sandwiches served with your choice of fries, tater tots or side salad. Substitute steak fries, onion rings or sweet potato fries for only $1.50
+				.cell.medium-6(v-for="item in sandwiches")
+					.menu-item
+						.menu-itemName {{ item.itemName }}
+						.menu-itemPrice {{ item.itemPrice }}
+						.menu-itemDescription {{ item.itemDescription }}
+				.cell.medium-6
+					.callout-menu.callout-menu--primary
+						p all sandwiches served with your choice of fries, tater tots or side salad. Substitute steak fries, onion rings or sweet potato fries for only $1.50
 		.grid-container.menu-section
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-title.mb-2
 					h2.variane.colorPrimary Wraps
 					span.menu-titlePrice.colorPrimary Your Choice only #[strong $10.49]
-				.cell.medium-6.menu-item(v-for="item in wraps")
-					.menu-itemName {{ item.itemName }}
-					.menu-itemDescription {{ item.itemDescription }}
+				.cell.medium-6(v-for="item in wraps")
+					.menu-item
+						.menu-itemName {{ item.itemName }}
+						.menu-itemDescription {{ item.itemDescription }}
 </template>
 	
 <script>

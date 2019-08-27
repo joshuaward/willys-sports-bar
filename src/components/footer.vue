@@ -15,15 +15,15 @@
 				.cell.medium-6.large-4
 					ul.footer-links
 						li.footer-link
-							a(href="") Home
+							router-link(to="/", @click="toggleMenu()") Home
 						li.footer-link
-							a(href="") Menu
+							router-link(to="/Menu", @click="toggleMenu()") Menu
+						//- li.footer-link
+						//- 	router-link(to="/Events", @click="toggleMenu()") Events
 						li.footer-link
-							a(href="") About
+							router-link(to="/About", @click="toggleMenu()") About
 						li.footer-link
-							a(href="") Events
-						li.footer-link
-							a(href="") Contact
+							router-link(to="/Contact", @click="toggleMenu()") Contact
 				.cell.footer-copyright
 					small Copyright &copy; {{ date }} Willy's Sports Bar
 						

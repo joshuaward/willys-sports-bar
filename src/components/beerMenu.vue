@@ -1,9 +1,10 @@
 <template lang="pug">
 	section.menu-beerMenu.py-0
 		.grid-container.menu-section
-			.grid-x
+			.grid-x.grid-padding-x
 				.cell.menu-title
 					h2.variane.colorPrimary.mb-2 Draft Beers
+			.grid-x.grid-padding-x
 				.cell.medium-6.menu-item(v-for="item in draftBeer")
 					.menu-itemName {{ item.beerName }}
 					.menu-itemAbv {{ item.beerAbv }}

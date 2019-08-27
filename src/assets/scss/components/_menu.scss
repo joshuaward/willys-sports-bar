@@ -1,4 +1,7 @@
 .menu {
+	> section {
+		padding-top: 0;
+	}
 	&-section {
 		position: relative;
 		padding-top: $spacer*3;
@@ -39,6 +42,7 @@
 	}
 	&-item {
 		display: flex;
+		flex: 1 0 auto;
 		align-items: flex-start;
 		justify-content: flex-start;
 		flex-wrap: wrap;
@@ -121,7 +125,7 @@
 			}
 			&Abv,
 			&Style {
-				flex: 0 0 40%;
+				flex: 1 0 40%;
 				text-align: right;
 			}
 			&Brewery,

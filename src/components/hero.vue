@@ -1,7 +1,7 @@
 <template lang="pug">
 	section.hero
-		.grid-container.full
-			.grid-x
+		.grid-container
+			.grid-x.grid-padding-x
 				.cell.title
 					h1 {{ title }}
 				.cell.hours
