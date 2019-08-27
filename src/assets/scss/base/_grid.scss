@@ -11,8 +11,12 @@
 		max-width: 100%;
 		padding: 0 0.625rem;
 		@media (min-width: $med) {
-			padding: 0 1.25rem;
+			padding: 2rem 0;
 		}
+	}
+	.tabs > & {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.grid-x {
 		position: relative;

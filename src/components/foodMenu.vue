@@ -1,29 +1,31 @@
 <template lang="pug">
 	section.menu-foodMenu.py-0
-		.grid-container.menu-section
-			.grid-x.grid-padding-x
-				.cell.menu-title
-					h2.variane.colorPrimary.mb-2 Starting Line
-				.cell.medium-6(v-for="item in startingLine")
-					.menu-item
-						.menu-itemName {{ item.itemName }}
-						.menu-itemPrice {{ item.itemPrice }}
-						.menu-itemDescription {{ item.itemDescription }}
-				.cell.medium-6
-					.callout-menu.callout-menu--yellow
-						.callout-inner
-							.callout-title.rye Dipping Sauces.. #[small.avenir (choose one per order)]
-							.callout-content
-								p Ranch, BBQ, Honey Mustard, Beu Cheese, Buffalo Wing Sauce or Raspberry Habanero. Extra portions $0.50.
-		.grid-container.menu-section.menu-primary
-			.grid-x.grid-padding-x
-				.cell.menu-title.menu-title--underline
-					h2.rye.colorWhite.mb-2 Wings #[span.variane.colorSecondary and things...]
-				.cell.medium-6(v-for="item in wings")
-					.menu-item
-						.menu-itemName(v-html="item.itemName")
-						.menu-itemPrice {{ item.itemPrice }}
-						.menu-itemDescription {{ item.itemDescription }}
+		.menu-section
+			.grid-container
+				.grid-x.grid-padding-x
+					.cell.menu-title
+						h2.variane.colorPrimary.mb-2 Starting Line
+					.cell.medium-6(v-for="item in startingLine")
+						.menu-item
+							.menu-itemName {{ item.itemName }}
+							.menu-itemPrice {{ item.itemPrice }}
+							.menu-itemDescription {{ item.itemDescription }}
+					.cell.medium-6
+						.callout-menu.callout-menu--yellow
+							.callout-inner
+								.callout-title.rye Dipping Sauces.. #[small.avenir (choose one per order)]
+								.callout-content
+									p Ranch, BBQ, Honey Mustard, Beu Cheese, Buffalo Wing Sauce or Raspberry Habanero. Extra portions $0.50.
+		.menu-section.menu-primary.menu-primary--fullWidth
+			.grid-container
+				.grid-x.grid-padding-x
+					.cell.menu-title.menu-title--underline
+						h2.rye.colorWhite.mb-2 Wings #[span.variane.colorSecondary and things...]
+					.cell.medium-6(v-for="item in wings")
+						.menu-item
+							.menu-itemName(v-html="item.itemName")
+							.menu-itemPrice {{ item.itemPrice }}
+							.menu-itemDescription {{ item.itemDescription }}
 		.grid-container.menu-section.menu-section--borderBottom
 			.grid-x.grid-padding-x
 				.cell.menu-title.mb-2
@@ -46,21 +48,23 @@
 					.callout-menu.callout-menu--primary
 						p All baskets served with steak fries and toast with your choice of dipping sauce
 		.grid-container.menu-section.pb-5
-			.grid-x.grid-padding-x
+			.grid-x.grid-padding-x.align-center
 				.cell.menu-title.mb-2
 					h2.variane.colorPrimary Quesadillas
-				.cell.medium-6
+				.cell.medium-7
 					.menu-item.menu-item--between
 						p Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
 						.menu-flexItem #[strong Veggie] $7.99
 						.menu-flexItem #[strong Chicken] $10.99
 						.menu-flexItem #[strong Philly] $10.99
 		.grid-container.menu-section.menu-primary.menu-primary--noBorder.pb-3
+			.grid-x.grid-padding-x.align-center
+				.cell.medium-6
+					.menu-preHeader
+						h2 1/3
+						p LB Grilled Angus Beef
+							span Make it a #[strong DELUXE] for a $1.00 more
 			.grid-x.grid-padding-x
-				.cell.menu-preHeader
-					h2 1/3
-					p LB Grilled Angus Beef
-						span Make it a #[strong DELUXE] for a $1.00 more
 				.cell.menu-title.mt-3
 					h2.variane.colorWhite.mb-2 Burgers
 				.cell.medium-6(v-for="item in burgers")
