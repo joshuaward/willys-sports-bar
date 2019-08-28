@@ -2,11 +2,11 @@
 	nav#nav.nav.rye
 		ul 
 			li.nav-link
-				router-link(to="/", @click="toggleMenu()") Home
+				router-link(:to="{ name: 'Home' }" exact, @click="toggleMenu()") Home
 			li.nav-link
 				router-link(to="/Menu", @click="toggleMenu()") Menu
 			//- li.nav-link
-			//- 	router-link(to="/Events", @click="toggleMenu()") Events
+				//- router-link(to="/Events", @click="toggleMenu()") Events
 			li.nav-link
 				router-link(to="/About", @click="toggleMenu()") About
 			li.nav-link

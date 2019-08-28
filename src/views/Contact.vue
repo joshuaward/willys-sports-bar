@@ -1,6 +1,9 @@
 <template lang="pug">
 	section.contact
-		h1 This is a Contact page
+		.grid-container
+			.grid-x.grid-padding-x
+				.cell
+					h1 This is a Contact page
 </template>
 
 <script>

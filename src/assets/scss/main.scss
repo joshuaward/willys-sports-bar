@@ -1,9 +1,10 @@
 // external 
 @import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Rye');
-@import url('https://fonts.googleapis.com/css?family=avenir+Sans:300,400,700');
+// @import url('https://fonts.googleapis.com/css?family=avenir+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.8.0/css/all.css');
 
-// wizardry 
+// wizardry
 @import 
 	'base/variables',
 	'base/functions',
@@ -11,9 +12,9 @@
 
 // base 
 @import 
+	'base/fonts',
 	'base/base',
 	'base/grid',
-	'base/fonts',
 	'base/helpers',
 	'base/icons',
 	'base/typography';
@@ -44,8 +45,6 @@
 	'components/tooltip';
 
 // vendor
-// @import 
-// 	'components/card';
 
 code {
 	display: block;
