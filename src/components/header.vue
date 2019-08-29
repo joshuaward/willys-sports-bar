@@ -8,23 +8,24 @@
 						span.variane.colorSecondary Sportsbar
 						span.colorPrimary & Casino
 				.cell.auto
-					button.hamburger(@click.stop.prevent="toggleMenu()", :class="{ active: isActive }")
+					button.hamburger(@click.stop.prevent="toggleMenu()", :class="{ active: menuState }")
 						span
-				Navigation(:class="{ active: isActive }")
+				Navigation
 </template>
 
 <script>
 import Navigation from '@/components/navigation';
+import ToggleMenu from '@/mixins/ToggleMenu.js'
 
 export default {
 	name: 'Header',
+	mixins: [ToggleMenu],
 	components: {
 		Navigation
   },
 	data () {
 		return {
 			title: 'Header',
-			isActive: false,
 			limitPosition: 600,
 			scrolled: false,
 			background: false,
@@ -33,25 +34,6 @@ export default {
 		}
 	},
 	methods: {
-		toggleMenu() {
-			var b = document.querySelector('body');
-			const links = document.querySelectorAll('.nav-link > a')
-			const nav = document.querySelector('#nav')
-			const hamburger = document.querySelector('.hamburger')
-			if(this.isActive) {
-				this.isActive = false;
-				b.classList.remove('active');
-			} else {
-				this.isActive = true;
-				b.classList.add('active');
-			}
-			links.forEach(link => link.addEventListener('click', () => {
-				nav.classList.toggle('active');
-				hamburger.classList.toggle('active');
-				b.classList.toggle('active');
-				window.scrollTo(0,0);
-			}))
-		},
 		handleScroll() {
 			if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
 				this.scrolled = true;

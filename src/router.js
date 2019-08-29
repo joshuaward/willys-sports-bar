@@ -43,5 +43,11 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue')
     }
-  ]
+	],
+	scrollBehavior() {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		})
+	}
 })
