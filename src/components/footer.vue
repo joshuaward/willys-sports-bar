@@ -2,7 +2,7 @@
 	footer.footer
 		.grid-container
 			.grid-x
-				.cell.medium-6.large-4
+				.cell.medium-6.large-8
 					router-link.logo(:to="{ name: 'Home' }" exact)
 						span.rye.colorWhite Willy's 
 						span.variane.colorSecondary Sportsbar

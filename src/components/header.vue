@@ -49,6 +49,7 @@ export default {
 				nav.classList.toggle('active');
 				hamburger.classList.toggle('active');
 				b.classList.toggle('active');
+				window.scrollTo(0,0);
 			}))
 		},
 		handleScroll() {

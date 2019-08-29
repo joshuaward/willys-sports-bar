@@ -10,7 +10,7 @@
 						ul.hours-list
 							li Sunday: 10:00 am - 12:00 am
 							li Monday - Thursday: 11:00 am - 1:00 am 
-								span.open (open)
+								//- span.open (open)
 							li Friday: 11:00 am - 2:00 am
 							li Saturday: 10:00 am - 2:00 am
 						.hours-happy

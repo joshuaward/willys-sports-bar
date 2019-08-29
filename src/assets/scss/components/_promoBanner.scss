@@ -25,4 +25,13 @@
 			color: $white;
 		}
 	}
+	.contact & {
+		background-color: $secondary;
+		h3 {
+			color: $primary;
+		}
+		p {
+			color: $accent;
+		}
+	}
 }
