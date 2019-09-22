@@ -8,12 +8,14 @@
 <script>
 import Hero from '@/components/hero';
 import Tabs from '@/components/tabs';
+import Testimonials from '@/components/testimonials';
 
 export default {
 	name: 'home',
 	components: {
 		Hero,
-		Tabs
+		Tabs,
+		Testimonials
 	},
 	data() {
 		return {
