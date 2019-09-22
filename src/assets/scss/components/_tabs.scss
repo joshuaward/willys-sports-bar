@@ -16,9 +16,11 @@
 		padding: 11px $spacer $spacer;
 		background-color: $accent;
 		border-top: 5px solid $accent;
+		color: rgba($white,0.6);
 		font-weight: bold;
 		transition: 100ms linear all;
 		cursor: pointer;
+		z-index: 1;
 		@media (min-width: $lg) {
 			flex: 0 0 auto;
 			padding-left: 2.5rem;

@@ -1,13 +1,16 @@
 <template lang="pug">
 	#tabs.tabs
-		.grid-container
+		.grid-container.fillAccent.full
 			.grid-x
 				.cell
-					.tabs-triggers
-						.tabs-trigger(
-							v-for='(item, index) in categories',
-							:class="[index === active ? 'tabs-trigger--active' : '']",
-							@click='activate(index)') {{categories[index]}}
+					.grid-container
+						.grid-x
+							.cell
+								.tabs-triggers
+									.tabs-trigger(
+										v-for='(item, index) in categories',
+										:class="[index === active ? 'tabs-trigger--active' : '']",
+										@click='activate(index)') {{categories[index]}}
 		.tabs-content(v-if="active === 0")
 			food-menu
 		.tabs-content(v-if="active === 1")
