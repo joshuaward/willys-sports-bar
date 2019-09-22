@@ -15,7 +15,7 @@
 							i.fas.fa-info-circle
 					.cell.medium-6
 						Carousel.intro-home
-		Testimonials.home
+		Testimonials.home-testimonials
 		section.fillPrimary
 			.grid-container
 				.grid-x
@@ -58,17 +58,20 @@ export default {
 				{
 					image: require('@/assets/img/card-craft-beer.jpg'),
 					title: 'Craft Beer',
-					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
+					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.',
+					link: '/Menu'
 				},
 				{
 					image: require('@/assets/img/card-original-drinks.jpg'),
 					title: 'Original Drinks',
-					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
+					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.',
+					link: '/Menu'
 				},
 				{
 					image: require('@/assets/img/card-delicious-food.jpg'),
 					title: 'Delicious Food',
-					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.'
+					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.',
+					link: '/Menu'
 				}
 			]
 		};

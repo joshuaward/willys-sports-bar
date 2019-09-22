@@ -1,0 +1,21 @@
+.contact {
+	&-info {
+		margin-bottom: $spacer*2;
+		i {
+			margin-right: $spacer*0.625;
+			color: $accent;
+		}
+	}
+	&-address {
+		display: flex;
+
+	}
+	&-hours {
+		margin-bottom: $spacer*2;
+	}
+	&-hoursList {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}

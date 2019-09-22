@@ -1,7 +1,7 @@
 <template lang="pug">
 	#tabs.tabs
 		.grid-container
-			.grid-x.grid-padding-x
+			.grid-x
 				.cell
 					.tabs-triggers
 						.tabs-trigger(
@@ -13,11 +13,15 @@
 		.tabs-content(v-if="active === 1")
 			beer-menu
 		.tabs-content(v-if="active === 2")
-			section.py-0
-				.grid-container.menu-section
+			section.menu-section
+				.grid-container
 					.grid-x
 						.cell.menu-title
 							h2.variane.colorPrimary.mb-2 Handcrafted Cocktails
+				.grid-container
+					.grid-x
+						.cell
+							p Coming soon!
 </template>
 	
 <script>

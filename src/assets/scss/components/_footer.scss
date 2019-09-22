@@ -20,6 +20,10 @@
 				margin-bottom: 0;
 			}
 		}
+		a {
+			color: $white;
+			font-weight: normal;
+		}
 	}
 	&-links {
 		display: flex;

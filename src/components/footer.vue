@@ -10,8 +10,8 @@
 					.footer-address
 						p 1401 9th Ave SW #[br] Watertown, SD 57201
 					.footer-contact
-						p #[strong P]: 605.878.3500
-						p #[strong E]: willy@willyssportsbar.com
+						p #[strong P]: #[a(href="tel:605.878.3500") 605.878.3500]
+						p #[strong E]: #[a(href="mailto:willy@willyssportsbar.com") willy@willyssportsbar.com]
 				.cell.medium-6.large-4
 					ul.footer-links
 						li.footer-link

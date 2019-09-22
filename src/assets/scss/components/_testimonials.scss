@@ -13,11 +13,14 @@
 		background-color: rgba($black,0.8);
 		z-index: 0;
 	}
-	&.home {
+	.home & {
 		background-image: url('../img/testimonials-home-bg.jpg');
 	}
-	&.about {
-		background-image: url('../img/testimonials-home-bg.jpg');
+	.about & {
+		background-image: url('../img/testimonials-about-bg.jpg');
+	}
+	.contact & {
+		background-image: url('../img/testimonials-contact-bg.jpg');
 	}
 	h2 {
 		margin-top: 0;

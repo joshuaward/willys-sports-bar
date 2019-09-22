@@ -5,6 +5,7 @@
 	background-color: $white;
 	&-triggers {
 		display: flex;
+		background-color: $accent;
 	}
 	&-trigger {
 		display: flex;
@@ -18,6 +19,11 @@
 		font-weight: bold;
 		transition: 100ms linear all;
 		cursor: pointer;
+		@media (min-width: $lg) {
+			flex: 0 0 auto;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+		}
 		&--active {
 			background-color: $white;
 			border-top: 5px solid $primary;

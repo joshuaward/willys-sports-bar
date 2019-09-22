@@ -3,8 +3,9 @@
 		.menu-section
 			.grid-container
 				.grid-x.grid-padding-x
-					.cell.menu-title
-						h2.variane.colorPrimary.mb-2 Starting Line
+					.cell
+						.menu-title
+							h2.variane.colorPrimary.mb-2 Starting Line
 					.cell.medium-6(v-for="item in startingLine")
 						.menu-item
 							.menu-itemName {{ item.itemName }}
@@ -19,8 +20,9 @@
 		.menu-section.menu-primary.menu-primary--fullWidth
 			.grid-container
 				.grid-x.grid-padding-x
-					.cell.menu-title.menu-title--underline
-						h2.rye.colorWhite.mb-2 Wings #[span.variane.colorSecondary and things...]
+					.cell
+						.menu-title.menu-title--underline
+							h2.rye.colorWhite.mb-2 Wings #[span.variane.colorSecondary and things...]
 					.cell.medium-6(v-for="item in wings")
 						.menu-item
 							.menu-itemName(v-html="item.itemName")
@@ -28,8 +30,9 @@
 							.menu-itemDescription {{ item.itemDescription }}
 		.grid-container.menu-section.menu-section--borderBottom
 			.grid-x.grid-padding-x
-				.cell.menu-title.mb-2
-					h2.variane.colorPrimary Salads
+				.cell
+					.menu-title.mb-2
+						h2.variane.colorPrimary Salads
 					span.menu-titlePrice.colorPrimary Your Choice only #[strong $9.99]
 				.cell.medium-6(v-for="item in salads")
 					.menu-item
@@ -37,8 +40,9 @@
 						.menu-itemDescription {{ item.itemDescription }}
 		.grid-container.menu-section.menu-section--borderBottom
 			.grid-x.grid-padding-x
-				.cell.menu-title.mb-2
-					h2.variane.colorPrimary Baskets
+				.cell
+					.menu-title.mb-2
+						h2.variane.colorPrimary Baskets
 				.cell.medium-6(v-for="item in baskets")
 					.menu-item
 						.menu-itemName {{ item.itemName }}
@@ -49,8 +53,9 @@
 						p All baskets served with steak fries and toast with your choice of dipping sauce
 		.grid-container.menu-section.pb-5
 			.grid-x.grid-padding-x.align-center
-				.cell.menu-title.mb-2
-					h2.variane.colorPrimary Quesadillas
+				.cell
+					.menu-title.mb-2
+						h2.variane.colorPrimary.textCenter Quesadillas
 				.cell.medium-7
 					.menu-item.menu-item--between
 						p Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
@@ -65,8 +70,9 @@
 						p LB Grilled Angus Beef
 							span Make it a #[strong DELUXE] for a $1.00 more
 			.grid-x.grid-padding-x
-				.cell.menu-title.mt-3
-					h2.variane.colorWhite.mb-2 Burgers
+				.cell
+					.menu-title.mt-3
+						h2.variane.colorWhite.mb-2 Burgers
 				.cell.medium-6(v-for="item in burgers")
 					.menu-item
 						.menu-itemName {{ item.itemName }}
@@ -81,8 +87,9 @@
 		.anchor(ref="sandwiches")
 		.grid-container.menu-section.menu-section--borderBottom
 			.grid-x.grid-padding-x
-				.cell.menu-title.mb-2
-					h2.variane.colorPrimary Sandwiches
+				.cell
+					.menu-title.mb-2
+						h2.variane.colorPrimary Sandwiches
 				.cell.medium-6(v-for="item in sandwiches")
 					.menu-item
 						.menu-itemName {{ item.itemName }}
@@ -93,9 +100,10 @@
 						p all sandwiches served with your choice of fries, tater tots or side salad. Substitute steak fries, onion rings or sweet potato fries for only $1.50
 		.grid-container.menu-section
 			.grid-x.grid-padding-x
-				.cell.menu-title.mb-2
-					h2.variane.colorPrimary Wraps
-					span.menu-titlePrice.colorPrimary Your Choice only #[strong $10.49]
+				.cell
+					.menu-title.mb-2
+						h2.variane.colorPrimary Wraps
+						span.menu-titlePrice.colorPrimary Your Choice only #[strong $10.49]
 				.cell.medium-6(v-for="item in wraps")
 					.menu-item
 						.menu-itemName {{ item.itemName }}

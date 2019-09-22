@@ -2,6 +2,7 @@
 	main.menu
 		Hero(:title="title")
 		Tabs
+		Testimonials.menu-testimonials
 </template>
 
 <script>

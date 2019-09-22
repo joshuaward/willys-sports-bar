@@ -7,7 +7,7 @@
 			h2.card-title {{ item.title }}
 			p.card-copy {{ item.content }}
 		.card-footer
-			a.card-button(href="#")
+			router-link.card-button(:to="item.link")
 				i.fas.fa-arrow-right
 </template>
 

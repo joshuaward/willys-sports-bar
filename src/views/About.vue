@@ -35,8 +35,8 @@
 					.cell.medium-6.large-4.order-sm-1.order-md-2
 						.about-image
 							img(src="https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", alt="")
-		Testimonials.about
-		Subscribe
+		Testimonials.about-testimonials
+		//- Subscribe
 </template>
 
 <script>
