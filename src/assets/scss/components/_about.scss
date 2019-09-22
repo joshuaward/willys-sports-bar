@@ -7,7 +7,19 @@
 	&-image {
 		height: 13.4375rem;
 		margin-bottom: $spacer;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		overflow: hidden;
+		&--beginning {
+			background-image: url('https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+		}
+		&--middle {
+			background-image: url('https://images.pexels.com/photos/1073097/pexels-photo-1073097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+		}
+		&--dream {
+			background-image: url('https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+		}
 	}
 	&-content {
 		padding: $spacer;
