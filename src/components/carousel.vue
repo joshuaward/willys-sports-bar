@@ -5,7 +5,7 @@
 			a.next.fas.fa-chevron-right(@click="navigate(1)")
 		div.carousel-wrapper
 			transition(name="fade")
-				img.carousel-item(
+				img.carousel-item(alt=""
 					:key="currentItem",
 					:src="currentItem",
 					@mouseover="stopRotation",

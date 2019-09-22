@@ -1,7 +1,7 @@
 <template lang="pug">
 	article.card
 		.card-header
-			img.card-image(:src="item.image")
+			img.card-image(:src="item.image" alt="Card Image")
 			//- img.card-image(:src="'../assets/img/' + item.image")
 		.card-content
 			h2.card-title {{ item.title }}
