@@ -14,7 +14,7 @@
 							p 1401 9th Ave SW, #[br]
 								| Watertown, SD 57201 #[br]
 							a.colorPrimary(href="tel:605.878.3500") 
-								i.fas.fa-phone 
+								i.fas.fa-phone-square
 								| 605.878.3500
 					.cell.medium-6
 						.contact-hours

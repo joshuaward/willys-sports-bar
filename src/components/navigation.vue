@@ -12,12 +12,12 @@
 			li.nav-link(@click="toggleMenu()")
 				router-link(to="/Contact") Contact
 			li.nav-link
-				a(href="https://www.facebook.com/Willys-Sports-Bar-Grille-and-Casino-152793464753634/")
+				a(href="https://www.facebook.com/Willys-Sports-Bar-Grille-and-Casino-152793464753634/" target="_blank")
 					i.fab.fa-facebook
-				a(href="#")
-					i.fab.fa-snapchat
-				a(href="#")
-					i.fab.fa-instagram
+				//- a(href="#")
+				//- 	i.fab.fa-snapchat
+				//- a(href="#")
+				//- 	i.fab.fa-instagram
 </template>
 
 <script>
