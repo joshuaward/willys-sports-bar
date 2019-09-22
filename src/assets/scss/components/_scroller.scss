@@ -12,7 +12,9 @@
 	box-shadow: 0 0 0.625rem rgba($black,0.2);
 	transform: translate(-50%,50%);
 	z-index: 9;
-	> a {
+	> button {
+		background-color: transparent;
+		border: 0;
 		color: $primary;
 	}
 }

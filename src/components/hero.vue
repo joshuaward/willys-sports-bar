@@ -15,7 +15,7 @@
 							li Saturday: 10:00 am - 2:00 am
 						.hours-happy
 							h4 Happy Hour Mon - Fri 4:00pm - 7:00pm
-		.plax.plax-1
+		.plax
 </template>
 
 <script>

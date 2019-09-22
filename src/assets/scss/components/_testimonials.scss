@@ -28,19 +28,82 @@
 		color: $secondary;
 		text-align: center;
 	}
-	.testimonial {
+	&-slider {
+		display: flex;
+		justify-content: space-between;
+		.prev,
+		.next {
+			display: none;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			height: 90px;
+			transform: translateY(-20px);
+			cursor: pointer;
+			@media (min-width: $lg) {
+				display: flex;
+			}
+			&:before,
+			&:after {
+				content: '';
+				width: 2px;
+				height: 50px;
+				background-color: rgba($white,0.6);
+			}
+			&:hover,
+			&:active,
+			&:focus {
+				&:before,
+				&:after {
+					background-color: rgba($white,0.9);
+				}
+			}
+		}
+		.prev {
+			&:before {
+				transform: rotate(45deg) translateY(10px);
+			}
+			&:after {
+				transform: rotate(-45deg) translateY(-10px);
+			}
+		}
+		.next {
+			&:before {
+				transform: rotate(-45deg) translateY(10px);
+			}
+			&:after {
+				transform: rotate(45deg) translateY(-10px);
+			}
+		}
+	}
+	&-sliderItem {
 		margin: 0 20px;
 		color: $white;
 		font-size: 1.125rem;
 		font-weight: 400;
 		text-align: center;
+		blockquote {
+			
+		}
 		p {
+			position: relative;
 			margin: 0 0 $spacer;
+			&:before {
+				position: absolute;
+				top: -50px;
+				left: -30px;
+				content: open-quote;
+				color: rgba($white,0.5);
+				font-family: $rye;
+				font-size: 5rem;
+			}
 		}
-		&-author {
-			color: $white;
-			font-weight: 600;
-			text-align: center;
-		}
+		
+	}
+	&-author {
+		color: $white;
+		font-weight: 600;
+		text-align: center;
 	}
 }

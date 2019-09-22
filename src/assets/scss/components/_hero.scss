@@ -35,11 +35,6 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		z-index: -2;
-		&-1 { background-image: url('../img/small/cheers-hero.jpg'); }
-		&-2 { background-image: url('../img/small/cheers-hero.jpg'); }
-		&-3 { background-image: url('../img/small/cheers-hero.jpg'); }
-		&-4 { background-image: url('../img/small/cheers-hero.jpg'); }
-		&-5 { background-image: url('../img/small/cheers-hero.jpg'); }
 	}
 	h3 {
 		position: relative;
@@ -94,6 +89,9 @@
 		.title {
 			display: none;
 		}
+		.plax {
+			background-image: url('../img/plax-1.jpg');
+		}
 	}
 	.menu &,
 	.about &,
@@ -101,6 +99,21 @@
 		height: 35vh;
 		.hours {
 			display: none;
+		}
+	}
+	.menu & {
+		.plax {
+			background-image: url('../img/plax-2.jpg');
+		}
+	}
+	.about & {
+		.plax {
+			background-image: url('../img/plax-3.jpg');
+		}
+	}
+	.contact & {
+		.plax {
+			background-image: url('../img/plax-4.jpg');
 		}
 	}
 }

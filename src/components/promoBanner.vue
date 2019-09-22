@@ -1,10 +1,20 @@
 <template lang="pug">
-	section.promo-banner
+	section.promoBanner
 		.grid-container
 			.grid-x
 				.cell
-					h3 Wednesday:
-					p Ladies Night: $2.00 Bottles all Night
+					.promoBanner-item
+						transition(name="slide")
+							.promorBanner-item(
+								:key="currentItem",
+								:src="currentItem",
+								@mouseover="stopRotation",
+								@mouseout="startRotation")
+									h3 {{items[currentNumber].day}}
+									p {{ items[currentNumber].special }}
+						.promoBanner-nav
+							a.prev.fas.fa-chevron-left(@click="navigate(-1)")
+							a.next.fas.fa-chevron-right(@click="navigate(1)")
 </template>
 
 <script>
@@ -12,7 +22,84 @@ export default {
 	name: 'PromoBanner',
 	data () {
 		return {
-			title: 'Promo Banner'
+			title: 'Promo Banner',
+			items: [
+				{
+					day: 'Sunday',
+					special: 'This is a special for Sunday.'
+				},
+				{
+					day: 'Monday',
+					special: 'This is a special for Monday.'
+				},
+				{
+					day: 'Tuesday',
+					special: 'This is a special for Tuesday.'
+				},
+				{
+					day: 'Wednesday',
+					special: 'This is a special for Wednesday.'
+				},
+				{
+					day: 'Thursday',
+					special: 'This is a special for Thursday.'
+				},
+				{
+					day: 'Friday',
+					special: 'This is a special for Friday.'
+				},
+				{
+					day: 'Saturday',
+					special: 'This is a special for Saturday.'
+				},
+			],
+			currentNumber: 0,
+			timer: null
+		}
+	},
+	mounted: function() {
+		this.startRotation();
+	},
+	methods: {
+		rotate: function() {
+			if (this.currentNumber >= this.length) {
+				this.currentNumber = 0;
+			}
+			else {
+				this.currentNumber++;
+			}
+		},
+		startRotation: function() {
+			this.timer = setInterval(this.rotate,3000);
+		},
+		stopRotation: function() {
+			clearInterval(this.timer);
+		},
+		resetRotation: function() {
+			this.stopRotation();
+			this.startRotation();
+		},
+		navigate: function(dir) {
+			var current = this.currentNumber;			
+			// replace start
+			current = current + dir;
+			if (current > this.length) {
+				current = 0;
+			}
+			else if (current < 0) {
+				current = this.length;
+			}
+			//replace end
+			this.resetRotation();
+			this.currentNumber = current;
+		}
+	},
+	computed: {
+		length: function() {
+			return this.items.length - 1;
+		},
+		currentItem: function() {
+			return this.items[this.currentNumber];
 		}
 	}
 }

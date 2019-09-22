@@ -56,6 +56,7 @@ export default {
 	data() {
 		return {
 			title: 'About',
+			parallax: require('@/assets/img/plax-1.jpg')
 		}
 	}
 }

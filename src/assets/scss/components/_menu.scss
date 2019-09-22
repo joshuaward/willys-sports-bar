@@ -8,15 +8,19 @@
 		}
 	}
 	&-title {
-		// display: flex;
-		// align-items: flex-end;
-		// justify-content: flex-start;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		&--center {
+			justify-content: center;
+		}
 		h2 {
 			margin-right: $spacer;
 			line-height: 1;
 		}
 		span {
 			margin-bottom: 6px;
+			color: $gray-light;
 		}
 		small {
 			margin-bottom: 6px;
@@ -61,8 +65,8 @@
 		&Description {
 			flex: 1 0 100%;
 		}
-		&--between {
-			justify-content: space-between;
+		&--center {
+			justify-content: center;
 		}
 		.menu-primary & {
 			&Name,

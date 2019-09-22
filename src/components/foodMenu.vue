@@ -33,7 +33,7 @@
 				.cell
 					.menu-title.mb-2
 						h2.variane.colorPrimary Salads
-					span.menu-titlePrice.colorPrimary Your Choice only #[strong $9.99]
+						span.menu-titlePrice Your Choice only #[strong $9.99]
 				.cell.medium-6(v-for="item in salads")
 					.menu-item
 						.menu-itemName {{ item.itemName }}
@@ -48,16 +48,16 @@
 						.menu-itemName {{ item.itemName }}
 						.menu-itemPrice {{ item.itemPrice }}
 						.menu-itemDescription {{ item.itemDescription }}
-				.cell.medium-6
+				.cell.medium-6.align-self-center
 					.callout-menu.callout-menu--primary
 						p All baskets served with steak fries and toast with your choice of dipping sauce
 		.grid-container.menu-section.pb-5
 			.grid-x.grid-padding-x.align-center
 				.cell
-					.menu-title.mb-2
+					.menu-title.menu-title--center.mb-2
 						h2.variane.colorPrimary.textCenter Quesadillas
 				.cell.medium-7
-					.menu-item.menu-item--between
+					.menu-item.menu-item--center
 						p Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
 						.menu-flexItem #[strong Veggie] $7.99
 						.menu-flexItem #[strong Chicken] $10.99
@@ -103,7 +103,7 @@
 				.cell
 					.menu-title.mb-2
 						h2.variane.colorPrimary Wraps
-						span.menu-titlePrice.colorPrimary Your Choice only #[strong $10.49]
+						span.menu-titlePrice Your Choice only #[strong $10.49]
 				.cell.medium-6(v-for="item in wraps")
 					.menu-item
 						.menu-itemName {{ item.itemName }}

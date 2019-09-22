@@ -15,7 +15,6 @@
 							i.fas.fa-info-circle
 					.cell.medium-6
 						Carousel.intro-home
-		Testimonials.home-testimonials
 		section.fillPrimary
 			.grid-container
 				.grid-x
@@ -27,6 +26,7 @@
 				.grid-x.grid-padding-x
 					.cell.medium-6.large-4(v-for="item in cards")
 						Card(:item="item", :key="item.title")
+		Testimonials.home-testimonials
 		//- Subscribe
 </template>
 
