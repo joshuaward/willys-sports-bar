@@ -76,6 +76,9 @@
 			}
 		}
 	}
+	&-flexItem {
+		margin-right: $spacer*0.5;
+	}
 	&-preHeader {
 		// position: absolute;
 		display: flex;

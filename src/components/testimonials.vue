@@ -31,7 +31,7 @@ export default {
 			title: 'Testimonials',
 			items: [
 				{
-					quote: 'WOW!!! Bugers are AMAZING. Hand pressed angus meat. Homemade sauces. Truly a gourmet burger. Friendly service..priced fairly.',
+					quote: 'WOW!!! Bugers are AMAZING. Hand pressed angus meat. Homemade sauces. Truly a gourmet burger. Friendly service. Priced fairly.',
 					author: 'KO'
 				},
 				{
@@ -60,7 +60,7 @@ export default {
 			}
 		},
 		startRotation: function() {
-			this.timer = setInterval(this.rotate,3000);
+			this.timer = setInterval(this.rotate,5000);
 		},
 		stopRotation: function() {
 			clearInterval(this.timer);

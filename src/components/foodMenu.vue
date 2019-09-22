@@ -55,10 +55,10 @@
 			.grid-x.grid-padding-x.align-center
 				.cell
 					.menu-title.menu-title--center.mb-2
-						h2.variane.colorPrimary.textCenter Quesadillas
+						h2.variane.colorPrimary.textCenter.mr-0 Quesadillas
 				.cell.medium-7
 					.menu-item.menu-item--center
-						p Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
+						p.textCenter Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
 						.menu-flexItem #[strong Veggie] $7.99
 						.menu-flexItem #[strong Chicken] $10.99
 						.menu-flexItem #[strong Philly] $10.99

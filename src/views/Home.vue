@@ -10,7 +10,7 @@
 						h1.intro-heading Welcome
 						h3.intro-subheading Our cocktail menu is inspired by vintage and contemporary recipes
 						p Located in Watertown, SD and inspired by midwestern comfort, Willy's embodies the energy of the upper midwest with the laid back atmosphere of your favorite place.
-						a.button.button-primary(href="#0")
+						router-link.button.button-primary(to="/About")
 							span More Info
 							i.fas.fa-info-circle
 					.cell.medium-6
