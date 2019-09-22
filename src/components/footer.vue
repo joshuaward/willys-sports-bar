@@ -24,6 +24,8 @@
 							router-link(to="/About", @click="toggleMenu()") About
 						li.footer-link
 							router-link(to="/Contact", @click="toggleMenu()") Contact
+		.grid-container.full.fillBlack
+			.grid-x
 				.cell.footer-copyright
 					small Copyright &copy; {{ date }} Willy's Sports Bar
 						
