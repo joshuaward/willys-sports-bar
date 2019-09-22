@@ -33,7 +33,7 @@
 				.cell
 					.menu-title.mb-2
 						h2.variane.colorPrimary Salads
-						span.menu-titlePrice Your Choice only #[strong $9.99]
+						span.menu-titlePrice Your Choice only #[strong.colorPrimary $9.99]
 				.cell.medium-6(v-for="item in salads")
 					.menu-item
 						.menu-itemName {{ item.itemName }}
@@ -103,7 +103,7 @@
 				.cell
 					.menu-title.mb-2
 						h2.variane.colorPrimary Wraps
-						span.menu-titlePrice Your Choice only #[strong $10.49]
+						span.menu-titlePrice Your Choice only #[strong.colorPrimary $10.49]
 				.cell.medium-6(v-for="item in wraps")
 					.menu-item
 						.menu-itemName {{ item.itemName }}

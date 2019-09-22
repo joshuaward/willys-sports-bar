@@ -12,10 +12,38 @@
 	box-shadow: 0 0 0.625rem rgba($black,0.2);
 	transform: translate(-50%,50%);
 	z-index: 9;
+	cursor: pointer;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $accent;
+		> button {
+			color: $secondary;
+		}
+	}
+	@media (min-width: $med) {
+		width: 3.125rem;
+		height: 3.125rem;
+	}
+	@media (min-width: $med) {
+		width: 4rem;
+		height: 4rem;
+	}
 	> button {
+		padding-top: 0.25rem;
 		background-color: transparent;
 		border: 0;
 		color: $primary;
+		font-size: 1rem;
+		line-height: 0;
+		i {
+			@media (min-width: $med) {
+				font-size: 1.25rem;
+			}
+			@media (min-width: $lg) {
+				font-size: 1.75rem;
+			}
+		}
 	}
 }
 
