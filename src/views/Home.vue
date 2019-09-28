@@ -17,10 +17,15 @@
 						Carousel.intro-home
 		section.fillPrimary
 			.grid-container
-				.grid-x
+				.grid-x.grid-padding-x
 					.cell
-						h2.rye.textCenter.colorSecondary.mb-2 Specials
+						h2.rye.textCenter.colorSecondary.mb-2 Daily Specials
 						Accordion
+					//- .cell.medium-4(style="overflow:hidden")
+					//- 	h2.rye.textCenter.colorSecondary.mb-2 Lunch Specials
+					//- 	.fb-page(data-href="https://www.facebook.com/pg/Willys-Sports-Bar-Grille-and-Casino-152793464753634" data-tabs="timeline" data-width="" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false")
+					//- 		blockquote.fb-xfbml-parse-ignore(cite="https://www.facebook.com/pg/Willys-Sports-Bar-Grille-and-Casino-152793464753634")
+					//- 			a(href="https://www.facebook.com/pg/Willys-Sports-Bar-Grille-and-Casino-152793464753634") Willy's: Sports Bar, Grille, and Casino
 		section.cards
 			.grid-container
 				.grid-x.grid-padding-x
