@@ -19,8 +19,8 @@
 	transition: $base-duration linear;
 	vertical-align: middle;
 	&:hover {
-		background-color: lighten($gray,10%);
-		border: 0.125rem solid lighten($gray,10%);
+		background-color: lighten($gray,5%);
+		border: 0.125rem solid lighten($gray,5%);
 		// color: $white;
 	}
 	&:disabled,
@@ -35,8 +35,8 @@
 		background-color: $primary;
 		border: 0.125rem solid $primary;
 		&:hover {
-			background-color: lighten($primary,10%);
-			border: 0.125rem solid lighten($primary,10%);
+			background-color: lighten($primary,5%);
+			border: 0.125rem solid lighten($primary,5%);
 		}
 	}
 	&-secondary {
@@ -44,8 +44,8 @@
 		border: 0.125rem solid $secondary;
 		color: $primary;
 		&:hover {
-			background-color: lighten($secondary,10%);
-			border: 0.125rem solid lighten($secondary,10%);
+			background-color: lighten($secondary,5%);
+			border: 0.125rem solid lighten($secondary,5%);
 		}
 	}
 	&-accent {
@@ -53,21 +53,18 @@
 		border: 0.125rem solid $accent;
 		color: $secondary;
 		&:hover {
-			background-color: lighten($accent,10%);
-			border: 0.125rem solid lighten($accent,10%);
+			background-color: lighten($accent,5%);
+			border: 0.125rem solid lighten($accent,5%);
 		}
 	}
 	i {
 		margin-top: -2px;
 		margin-left: $spacer*0.75;
 	}
-	&-success {}
-	&-info {}
-	&-warning {}
-	&-alert {}
-
-
-
+	// &-success {}
+	// &-info {}
+	// &-warning {}
+	// &-alert {}
 	&-small {
 		padding: 0.3125rem 0.9375rem;
 		font-size: 0.75rem;

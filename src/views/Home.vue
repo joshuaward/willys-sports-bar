@@ -20,10 +20,10 @@
 				.grid-x.grid-padding-x
 					//- .cell
 					//- 	h2.rye.textCenter.colorSecondary.mb-2 Specials
-					.cell.medium-8
+					.cell.medium-6.large-8
 						h2.variane.textCenter.colorSecondary.mb-2 Daily Specials
 						Accordion
-					.cell.medium-4(style="overflow:hidden")
+					.cell.medium-6.large-4(style="overflow:hidden")
 						h2.variane.textCenter.colorSecondary.mb-2 Lunch Specials
 						.fb-page(data-href="https://www.facebook.com/pg/Willys-Sports-Bar-Grille-and-Casino-152793464753634" data-tabs="timeline" data-width="" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false")
 							blockquote.fb-xfbml-parse-ignore(cite="https://www.facebook.com/pg/Willys-Sports-Bar-Grille-and-Casino-152793464753634")
