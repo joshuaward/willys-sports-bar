@@ -6,7 +6,7 @@
 			.grid-container
 				.grid-x.grid-padding-x
 					.cell.large-12
-						h2 Contact Us
+						h2.rye.colorAccent Contact Us
 				.grid-x.grid-padding-x
 					.cell.medium-6
 						.contact-info
