@@ -24,34 +24,34 @@ export default {
 		return {
 			title: 'Promo Banner',
 			items: [
-				{
-					day: 'Sunday',
-					special: 'This is a special for Sunday.'
-				},
+				// {
+				// 	day: 'Sunday',
+				// 	special: 'You\'re special. So come drink with us!'
+				// },
 				{
 					day: 'Monday',
-					special: 'This is a special for Monday.'
+					special: 'Apps and taps: Any tall beer (25oz) and any appetizer for $10.'
 				},
 				{
 					day: 'Tuesday',
-					special: 'This is a special for Tuesday.'
+					special: 'Apps and taps: Any tall beer (25oz) and any appetizer for $10.'
 				},
 				{
 					day: 'Wednesday',
-					special: 'This is a special for Wednesday.'
+					special: 'Wing night: Half-price boneless wings. Basket or the appetizer.'
 				},
 				{
 					day: 'Thursday',
-					special: 'This is a special for Thursday.'
+					special: 'Burger night: Buy one burger get second burger half off. Sides included.'
 				},
 				{
 					day: 'Friday',
-					special: 'This is a special for Friday.'
+					special: 'Steak night: 10oz Ribeye steak, fries, side salad, and toast for $16.95.'
 				},
-				{
-					day: 'Saturday',
-					special: 'This is a special for Saturday.'
-				},
+				// {
+				// 	day: 'Saturday',
+				// 	special: 'You\'re special. So come drink with us!'
+				// },
 			],
 			currentNumber: 0,
 			timer: null

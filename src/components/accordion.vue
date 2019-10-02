@@ -14,13 +14,34 @@ export default {
 		return {
 			title: 'Accordion',
 			data: [
-				{title: 'Sunday', text: 'This is a special for Sunday'},
-				{title: 'Monday', text: 'This is a special for Monday'},
-				{title: 'Tuesday', text: 'This is a special for Tuesday'},
-				{title: 'Wednesday', text: 'This is a special for Wednesday'},
-				{title: 'Thursday', text: 'This is a special for Thursday'},
-				{title: 'Friday', text: 'This is a special for Friday'},
-				{title: 'Saturday', text: 'This is a special for Saturday'}
+				// {
+				// 	title: 'Sunday', 
+				// 	text: 'This is a special for Sunday'
+				// },
+				{
+					title: 'Monday', 
+					text: 'Apps and taps: Any tall beer (25oz) and any appetizer for $10.'
+				},
+				{
+					title: 'Tuesday', 
+					text: 'Apps and taps: Any tall beer (25oz) and any appetizer for $10'
+				},
+				{
+					title: 'Wednesday', 
+					text: 'Wing night: Half-price boneless wings. Basket or the appetizer.'
+				},
+				{
+					title: 'Thursday',
+					text: 'Burger night: Buy one burger get second burger half off. Sides included.'
+				},
+				{
+					title: 'Friday', 
+					text: 'Steak night: 10oz Ribeye steak, fries, side salad, and toast for $16.95.'
+				},
+				// {
+				// 	title: 'Saturday', 
+				// 	text: 'This is a special for Saturday'
+				// }
 			]
 		}
 	},
