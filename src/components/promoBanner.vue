@@ -5,7 +5,7 @@
 				.cell
 					.promoBanner-item
 						transition(name="slide")
-							.promorBanner-item(
+							.promoBanner-slide(
 								:key="currentItem",
 								:src="currentItem",
 								@mouseover="stopRotation",
@@ -30,11 +30,11 @@ export default {
 				// },
 				{
 					day: 'Monday',
-					special: 'Apps and taps: Any tall beer (25oz) and any appetizer for $10.'
+					special: 'Apps and taps: Any tall beer (25oz) & any appetizer for $10.'
 				},
 				{
 					day: 'Tuesday',
-					special: 'Apps and taps: Any tall beer (25oz) and any appetizer for $10.'
+					special: 'Apps and taps: Any tall beer (25oz) & any appetizer for $10.'
 				},
 				{
 					day: 'Wednesday',
@@ -42,11 +42,11 @@ export default {
 				},
 				{
 					day: 'Thursday',
-					special: 'Burger night: Buy one burger get second burger half off. Sides included.'
+					special: 'Burger night: Buy one, get second burger half off. Sides included.'
 				},
 				{
 					day: 'Friday',
-					special: 'Steak night: 10oz Ribeye steak, fries, side salad, and toast for $16.95.'
+					special: 'Steak night: 10oz Ribeye steak, fries, side salad, & toast for $16.95.'
 				},
 				// {
 				// 	day: 'Saturday',
