@@ -15,6 +15,7 @@
 		padding-right: $spacer;
 	}
 	&-nav {
+		flex: 0 1 auto;
 		.prev,
 		.next {
 			padding: $spacer*0.625 $spacer*0.75;

@@ -1,3 +1,14 @@
+.cards {
+	&-items {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $med) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+}
 .card {
 	position: relative;
 	display: flex;
@@ -6,12 +17,23 @@
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	line-height: 1.75;
 	overflow: hidden;
+	&:nth-of-type(1),
+	&:nth-of-type(2) {
+		@media (min-width: $med) {
+			flex: 0 0 48%;
+		}
+	}
+	@media (min-width: $lg) {
+		flex: 0 0 31.4% !important;
+	}
 	&-header {
 		height: 215px;
 		overflow: hidden;
+		background: red;
 		> img {
+			height: 215px;
 			object-fit: cover;
-			object-position: 50% 100%;
+			object-position: 50% 50%;
 		}
 	}
 	&-content {
@@ -70,5 +92,8 @@
 			transform: rotate(45deg);
 			z-index: -1;
 		}
+	}
+	&-logo {
+		padding: $spacer*4;
 	}
 }

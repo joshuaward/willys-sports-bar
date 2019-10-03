@@ -31,8 +31,10 @@
 		section.cards
 			.grid-container
 				.grid-x.grid-padding-x
-					.cell.medium-6.large-4(v-for="item in cards")
-						Card(:item="item", :key="item.title")
+					.cell
+						.cards-items
+							.card(v-for="item in cards")
+								Card(:item="item", :key="item.title")
 		Testimonials.home-testimonials
 		//- Subscribe
 </template>

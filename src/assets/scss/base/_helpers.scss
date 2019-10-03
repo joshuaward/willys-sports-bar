@@ -58,6 +58,16 @@
 	background-color: $black !important;
 }
 
+.show-tablet {
+	display: none;
+	@media (min-width: $med) {
+		display: block;
+	}
+	@media (min-width: $lg) {
+		display: none;
+	}
+}
+
 // margin helpers
 // margin-top
 .mt-0 {
