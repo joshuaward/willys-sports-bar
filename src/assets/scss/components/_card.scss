@@ -10,9 +10,7 @@
 	}
 }
 .card {
-	position: relative;
-	display: flex;
-	flex-direction: column;
+	
 	margin-bottom: $spacer*2;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	line-height: 1.75;
@@ -25,6 +23,13 @@
 	}
 	@media (min-width: $lg) {
 		flex: 0 0 31.4% !important;
+	}
+	article {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
 	}
 	&-header {
 		height: 215px;

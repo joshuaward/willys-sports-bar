@@ -67,19 +67,19 @@ export default {
 				{
 					image: require('@/assets/img/card-craft-beer.jpg'),
 					title: 'Craft Beer',
-					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.',
+					content: 'We offer 14 taps of your favorite craft beers including seasonal and regulars from your favorite regional breweries.',
 					link: '/Menu'
 				},
 				{
 					image: require('@/assets/img/card-original-drinks.jpg'),
 					title: 'Original Drinks',
-					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.',
+					content: 'With our liquor selection, we can serve you anything from an old fashioned to the basic CC7 or whatever you can dream up.',
 					link: '/Menu'
 				},
 				{
 					image: require('@/assets/img/card-delicious-food.jpg'),
 					title: 'Delicious Food',
-					content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.',
+					content: 'Rooted in midwestern comfort, we have everything to satisfy your taste buds. From delicious appetizers to a savory steak dinner.',
 					link: '/Menu'
 				}
 			]
