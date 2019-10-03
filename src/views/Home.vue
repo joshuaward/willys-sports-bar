@@ -67,13 +67,13 @@ export default {
 				{
 					image: require('@/assets/img/card-craft-beer.jpg'),
 					title: 'Craft Beer',
-					content: 'We offer 14 taps of your favorite craft beers including seasonal and regulars from your favorite regional breweries.',
+					content: 'We offer 14 taps of your favorite craft beers to soothe your palette, including seasonal and staples from your favorite regional breweries.',
 					link: '/Menu'
 				},
 				{
 					image: require('@/assets/img/card-original-drinks.jpg'),
 					title: 'Original Drinks',
-					content: 'With our liquor selection, we can serve you anything from an old fashioned to the basic CC7 or whatever you can dream up.',
+					content: 'With our liquor selection, we can serve you anything from an old fashioned to the basic CC7... Or whatever you can dream up.',
 					link: '/Menu'
 				},
 				{
