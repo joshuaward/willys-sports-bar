@@ -5,31 +5,28 @@
 		section.fillPrimary
 			.grid-container
 				.grid-x.grid-padding-x
-					.cell.textCenter
-						h2.rye.colorSecondary.mb-2 The Beginning
 					.cell.medium-7.large-8.order-sm-2.order-md-1
 						.about-content
-							p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+							h2.rye.colorSecondary.mb-2 The Beginning
+							p Everything started when we were little kids. We grew up in bars and restaurants ran by our family. Our playgrounds spanned from Webster’s Westwood Inn to right here in Watertown, chasing cousins around and helping out at The Drake, The Wheel Inn and our parents bar, Buckshot Willy’s. 
 					.cell.medium-5.large-4.order-sm-1.order-md-2
 						.about-image.about-image--beginning
 		section.fillSecondary
 			.grid-container
 				.grid-x.grid-padding-x
-					.cell.textCenter
-						h2.rye.colorPrimary.mb-2 The Middle
 					.cell.medium-5.large-4
 						.about-image.about-image--middle
 					.cell.medium-7.large-8
 						.about-content
-							p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+							h2.rye.colorPrimary.mb-2 The Middle
+							p We knew going through high school that someday it may be our turn! When the opportunity finally presented itself we jumped on it. Joining with our uncle Greg Meyer, we changed the name and game plan of a small Bar/Lounge to create Willy’s Sports Bar & Grille!!
 		section.fillAccent
 			.grid-container
 				.grid-x.grid-padding-x
-					.cell.textCenter
-						h2.rye.colorSecondary.mb-2 The Dream
 					.cell.medium-7.large-8.order-sm-2.order-md-1
 						.about-content
-							p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+							h2.rye.colorSecondary.mb-2 The Dream
+							p Now that we are on our own, we need to continue our families tradition. Creating a nice atmosphere, great food, great service and keeping all that right here in Watertown. That is the dream! 
 					.cell.medium-5.large-4.order-sm-1.order-md-2
 						.about-image.about-image--dream
 		Testimonials.about-testimonials

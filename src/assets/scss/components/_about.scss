@@ -1,8 +1,8 @@
 .about {
 	&-image,
 	&-content {
-		border-radius: 10px;
-		box-shadow: 0 0 1rem rgba($black,0.2);
+		// border-radius: 10px;
+		// box-shadow: 0 0 1rem rgba($black,0.2);
 	}
 	&-image {
 		height: 13.4375rem;
@@ -23,7 +23,7 @@
 	}
 	&-content {
 		padding: $spacer;
-		background-color: rgba($white,0.1);
+		// background-color: rgba($white,0.1);
 		@media (min-width: $med) {}
 		p {
 			margin-bottom: 0;
