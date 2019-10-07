@@ -160,7 +160,7 @@ export default {
 				},
 				{
 					"id": 8,
-					"itemName": "Steak &amp; Cheese Mini Tacos",
+					"itemName": "Steak & Cheese Mini Tacos",
 					"itemPrice": "$7.99",
 					"itemDescription": "Spicy steak and cheese tacos shrunk down to size and deep fried."
 				},

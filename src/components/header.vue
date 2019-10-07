@@ -8,6 +8,8 @@
 						span.variane.colorSecondary Sportsbar
 						span.colorPrimary & Casino
 				.cell.auto
+					a(href="https://wtn.zipdishdelivery.com/order/rv/61" target="_blank") Order Online
+				.cell.auto
 					button.hamburger(@click.stop.prevent="toggleMenu()", :class="{ active: menuState }")
 						span
 				Navigation
