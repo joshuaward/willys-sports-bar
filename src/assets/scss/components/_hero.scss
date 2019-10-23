@@ -127,7 +127,10 @@
 .zipDish {
 	position: absolute;
 	bottom: $spacer;
-	left: $spacer;
+	left: 0;
 	width: 4rem;
 	z-index: 999;
+	@media (min-width: $med) {
+		width: 5rem;
+	}
 }
