@@ -5,20 +5,43 @@
 		// box-shadow: 0 0 1rem rgba($black,0.2);
 	}
 	&-image {
+		position: relative;
 		height: 13.4375rem;
 		margin-bottom: $spacer;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		overflow: hidden;
+		&:before {
+			position: absolute;
+			content: 'New Photos Coming Soon!';
+			bottom: 0;
+			left: 0;
+			padding: $spacer*0.5 $spacer*1.25;
+			font-size: 0.875rem;
+			font-weight: bold;
+			z-index: 9;
+		}
 		&--beginning {
 			background-image: url('../../assets/img/willys-outside.jpg');
+			&:before {
+				background-color: rgba($secondary,0.8);
+				color: $primary;
+			}
 		}
 		&--middle {
 			background-image: url('../../assets/img/willys-bar.jpg');
+			&:before {
+				background-color: rgba($accent,0.8);
+				color: $secondary;
+			}
 		}
 		&--dream {
 			background-image: url('../../assets/img/willys-team.jpg');
+			&:before {
+				background-color: rgba($primary,0.8);
+				color: $white;
+			}
 		}
 	}
 	&-content {
