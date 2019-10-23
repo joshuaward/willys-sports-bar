@@ -76,6 +76,13 @@ nav {
 			// @media (min-width: $lg) {
 			// 	transform: translateX(0%);
 			// }
+			.zipDish-logo {
+				position: absolute;
+				top: 50%;
+				left: $spacer*0.75;
+				width: 2.5rem;
+				transform: translateY(-50%);
+			}
 			> a {
 				position: relative;
 				display: block;
