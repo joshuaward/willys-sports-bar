@@ -407,7 +407,7 @@ export default {
 					"id": 4,
 					"itemName": "Buffalo Chicken",
 					"itemPrice": "$10.49",
-					"itemDescription": "Tender grilled or golden crispy chicken brest tossed in our special hot wing sauce. Covered with melted Swiss cheese on a toasted bun."
+					"itemDescription": "Tender grilled or golden crispy chicken brest tossed in our special hot wing sauce. Covered with melted blue cheese on a toasted bun."
 				},
 				{
 					"id": 5,
