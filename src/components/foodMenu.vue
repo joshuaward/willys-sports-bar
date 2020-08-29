@@ -16,7 +16,7 @@
 							.callout-inner
 								.callout-title.rye Dipping Sauces.. #[small.avenir (choose one per order)]
 								.callout-content
-									p Ranch, BBQ, Honey Mustard, Beu Cheese, Buffalo Wing Sauce or Raspberry Habanero. Extra portions $0.50.
+									p Ranch, BBQ, Honey Mustard, Bleu Cheese, Buffalo Wing Sauce or Raspberry Habanero. Extra portions $0.50.
 		.menu-section.menu-primary.menu-primary--fullWidth
 			.grid-container
 				.grid-x.grid-padding-x
@@ -59,7 +59,7 @@
 				.cell.medium-7
 					.menu-item.menu-item--center
 						p.textCenter Grilled flour tortilla without special cheese blend. Try adding veggies or chicken.
-						.menu-flexItem #[strong Veggie] $7.99
+						.menu-flexItem #[strong Veggie] $8.99
 						.menu-flexItem #[strong Chicken] $10.99
 						.menu-flexItem #[strong Philly] $10.99
 		.grid-container.menu-section.menu-primary.menu-primary--noBorder.pb-3
@@ -97,7 +97,7 @@
 						.menu-itemDescription {{ item.itemDescription }}
 				.cell.medium-6
 					.callout-menu.callout-menu--primary
-						p all sandwiches served with your choice of fries, tater tots or side salad. Substitute steak fries, onion rings or sweet potato fries for only $1.50
+						p All sandwiches served with your choice of fries, tater tots or side salad. Substitute steak fries, onion rings or sweet potato fries for only $1.50
 		.grid-container.menu-section
 			.grid-x.grid-padding-x
 				.cell
@@ -120,7 +120,7 @@ export default {
 					"id": 1,
 					"itemName": "Jalapeño Cheddar Poppers",
 					"itemPrice": "$8.49",
-					"itemDescription": "Full-flavored Cheddar cheese and spicy diced jalapeño in crispy potato breading."
+					"itemDescription": "Full-flavored cheddar cheese and spicy diced jalapeño in crispy potato breading."
 				},
 				{
 					"id": 2,
@@ -132,19 +132,19 @@ export default {
 					"id": 3,
 					"itemName": "Gourmet onion Rings",
 					"itemPrice": "$7.99",
-					"itemDescription": "Thick sweet yellow onion coated with a Japanese-stylebreading deep fried to a golden brown."
+					"itemDescription": "Thick sweet yellow onion coated with a Japanese-style breading deep fried to a golden brown."
 				},
 				{
 					"id": 4,
 					"itemName": "Chicken Strips",
 					"itemPrice": "$8.49",
-					"itemDescription": "Four golden breaded chicken tenders served with a choice of dipping sauce."
+					"itemDescription": "Four golden breaded chicken tenders served with choice of dipping sauce."
 				},
 				{
 					"id": 5,
 					"itemName": "Cheese Balls",
 					"itemPrice": "$7.99",
-					"itemDescription": "Made from aged fine cheddar cheese and dipped in a golden batter and fried to a golden brown."
+					"itemDescription": "Made from aged fine cheddar cheese, dipped in a golden batter & fried to a golden brown."
 				},
 				{
 					"id": 6,
@@ -156,13 +156,13 @@ export default {
 					"id": 7,
 					"itemName": "Chicken Cordon Bleu Bites",
 					"itemPrice": "$7.99",
-					"itemDescription": "Diced ham and swiss cheese fill this crispy chicken appetizer (7)."
+					"itemDescription": "Diced ham & Swiss cheese fill this crispy chicken appetizer (7)."
 				},
 				{
 					"id": 8,
 					"itemName": "Steak & Cheese Mini Tacos",
 					"itemPrice": "$7.99",
-					"itemDescription": "Spicy steak and cheese tacos shrunk down to size and deep fried."
+					"itemDescription": "Spicy steak & cheese tacos shrunk down to size & deep fried."
 				},
 				{
 					"id": 9,
@@ -174,54 +174,60 @@ export default {
 					"id": 10,
 					"itemName": "Chislic",
 					"itemPrice": "$9.99",
-					"itemDescription": "Tender beef tips deep fried and seasoned with your choice of dipping sauce."
+					"itemDescription": "Tender beef tips deep fried & seasoned with your choice of dipping sauce."
 				},
 				{
 					"id": 11,
+					"itemName": "The Willy's Platter",
+					"itemPrice": "$15.99",
+					"itemDescription": "Cheeseballs, Onion Rings and Mini Tacos. No Substitutions."
+				},
+				{
+					"id": 12,
 					"itemName": "Ultimate Platter",
-					"itemPrice": "$18.99",
-					"itemDescription": "You're in control and can choose and THREE FULL SIZE appetizers to complete your ultimate comboplatter along with your choice of two dipping sauces."
+					"itemPrice": "$19.99",
+					"itemDescription": "You're in control & can choose from any Three Full Size (no duplicates) appetizers to complete your ultimate combo platter along with your choice of two dipping sauces."
 				},
 			],
 			wings: [
 				{
 					"id": 1,
-					"itemName": "Boneless Chicken Wings <small>(1/2 pound)</small>",
+					"itemName": "Boneless Chicken Wings",
 					"itemPrice": "$8.99",
-					"itemDescription": "Golden breaded boneless chicken wings served as-is or prepared in your favorite sauce."
+					"itemDescription": "1/2 lb, golden breaded boneless chicken wings served naked or prepared in your favorite sauce."
 				},
 				{
 					"id": 2,
 					"itemName": "Bone-In Wings",
 					"itemPrice": "$6.99",
-					"itemDescription": "Naked chicken wings served as-is or prepared in your favorite sauce (6)."
+					"itemDescription": "8 Naked chicken wings served as is or prepared in your favorite sauce."
 				},
 			],
 			salads: [
 				{
 					"id": 1,
 					"itemName": "Chef",
-					"itemDescription": "Oven roasted turkey breast and honey ham on top of crispy greens topped with shredded cheese, egg, fresh tomatoes, onions and your choice of dressing."
+					"itemDescription": "Oven roasted turi<ey breast & honey ham on top of crispy greens topped with shredded cheese, egg, fresh tomatoes, onions & your choice of dressing."
 				},
 				{
 					"id": 2,
 					"itemName": "Grilled Chicken",
-					"itemDescription": "Grilled chicken breast sliced and placed on top of fresh greens, egg, tomatoes, onions and shredded cheese served with your choice of dressing."
+					"itemDescription": "Grilled chicken breast sliced & placed on top of fresh greens, egg, tomatoes, onions & shredded cheese served with your choice of dressing."
 				},
 				{
 					"id": 3,
 					"itemName": "Crispy Chicken",
-					"itemDescription": "We take our crispy and juicy chicken tenders and place them on top of some fresh greens with egg, tomatoes, onions and shredded cheese with your choice of dressing."
+					"itemDescription": "We take our crispy & juicy chicken tenders & place them on top of some fresh greens with egg, tomatoes, onions & shredded cheese with your choice of dressing."
 				},
 				{
 					"id": 4,
 					"itemName": "Buffalo Chicken",
-					"itemDescription": "Grilled or crispy chicken tossed in our buffalo wind sauce placed on top of fresh greens with egg, tomatoes, onions and shredded cheese with your choice of dressing."
+					"itemDescription": "Grilled or crispy chicken tossed in our buffalo wing sauce placed on top of fresh greens with egg, tomatoes, onions & shredded cheese with your choice of dressing."
 				},
 				{
 					"id": 5,
 					"itemName": "Sizzlin' Philly Steak",
-					"itemDescription": "Grilled sirloin steak with sauteed green peppers and onions served on a fresh bed of greens with egg, green peppers, onions, tomatoes, cheese and crispy onion straws."
+					"itemDescription": "Grilled sirloin steak with sauteed green peppers & onions served on a fresh bed of greens with egg, green peppers, onions, tomatoes, cheese & crispy onion straws."
 				},
 			],
 			baskets: [
@@ -229,13 +235,13 @@ export default {
 					"id": 1,
 					"itemName": "Boneless Chicken Wings",
 					"itemPrice": "$10.49",
-					"itemDescription": "Golden breaded boneless chicken wings served as-is or in your favorite sauce."
+					"itemDescription": "Golden breaded boneless chicken wings served as is or in your favorite sauce."
 				},
 				{
 					"id": 2,
 					"itemName": "Chislic",
 					"itemPrice": "$11.99",
-					"itemDescription": "Tender beef tips deep fried and seasoned with your choice fo dipping sauce."
+					"itemDescription": "Tender beef tips deep fried & seasoned with your choice of dipping sauce."
 				},
 				{
 					"id": 3,
@@ -259,129 +265,135 @@ export default {
 				},
 				{
 					"id": 2,
-					"itemName": "Bacon Cheese Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "Grilled Angus burger served with melted cheese and crispy bacon on a toasted bun."
+					"itemName": "1/3 lb. Grilled Angus",
+					"itemPrice": "$8.49",
+					"itemDescription": "Make it a Deluxe for $0.75 more."
 				},
 				{
 					"id": 3,
-					"itemName": "Tex-Mex Burger",
-					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger with grilled jalapeños, BBQ sauce, bacon and spicy pepperjack cheese."
+					"itemName": "Bacon Cheese Burger",
+					"itemPrice": "$10.29",
+					"itemDescription": "Grilled Angus Burger served with melted American cheese & crispy bacon on a toasted bun."
 				},
 				{
 					"id": 4,
-					"itemName": "Russian Burger",
-					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger with grilled mushrooms and onions, sour cream, topped with melted Swiss cheese on a toasted bun."
+					"itemName": "Tex-Mex Burger",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger with grilled jalapeiios, BBQ sauce, bacon & spicy Pepperjack cheese."
 				},
 				{
 					"id": 5,
-					"itemName": "Mushroom & Swiss Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "This is a mushroom lover's dream a 1/3 lb Angus beef patty loaded with fresh sauteed mushrooms and creamy Swiss cheese."
+					"itemName": "Russian Burger",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger with grilled mushrooms & onions, sour cream & topped with melted Swiss cheese on a toasted bun."
 				},
 				{
 					"id": 6,
-					"itemName": "Ranch Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "Grilled Angus burger with creamy ranch dressing, crispy bacon topped with melted Swiss cheese on a toasted bun."
+					"itemName": "Mushroom & Swiss Burger",
+					"itemPrice": "$10.49",
+					"itemDescription": "This is a mushroom lovers dream, a 1/3 lb. Angus beef patty loaded with fresh sauteed mushrooms & creamy Swiss cheese."
 				},
 				{
 					"id": 7,
+					"itemName": "Ranch Burger",
+					"itemPrice": "$10.49",
+					"itemDescription": "Grilled Angus Burger with creamy ranch dressing, crispy bacon & topped with melted Swiss cheese on a toasted bun."
+				},
+				{
+					"id": 8,
 					"itemName": "Patty Melt",
 					"itemPrice": "$10.29",
 					"itemDescription": "Grilled Angus burger served on grilled wheat bread with sauteed onions and melted Swiss Cheese."
 				},
 				{
-					"id": 8,
-					"itemName": "German Patty Melt",
-					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger piled high with grilled onions and sauerkraut. Topped with melted Swiss cheese on a toasted bun."
-				},
-				{
 					"id": 9,
-					"itemName": "Texas Patty Melt",
-					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger smothered in jalapeños, BBQ sauce and spicy pepperjack cheese served on a grilled white bread."
+					"itemName": "German Patty Melt",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger piled high with grilled onions & sauerkraut. Topped with melted Swiss cheese on toasted wheat bread."
 				},
 				{
 					"id": 10,
-					"itemName": "Bacon Bleu Cheese Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "Grilled Angus burger topped with melted bleu cheese and double smoked bacon on a toasted bun."
+					"itemName": "Texas Patty Melt",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger smothered in jalapeiios, BBQ sauce & spicy Pepperjack cheese served on grilled white bread."
 				},
 				{
 					"id": 11,
-					"itemName": "Frisco Burger",
-					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger topped with sauteed mushrooms and onions, bacon, American and Swiss cheese on a frisco style bun."
+					"itemName": "Bacon Bleu Cheese Burger",
+					"itemPrice": "$10.29",
+					"itemDescription": "Grilled Angus Burger topped with melted bleu cheese & double smoked bacon on a toasted bun."
 				},
 				{
 					"id": 12,
-					"itemName": "Cheese Burger",
-					"itemPrice": "$8.99",
-					"itemDescription": "Grilled Angus burger with melted American cheese served on a toasted bun with pickles on the side."
+					"itemName": "Frisco Burger",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger topped with sauteed mushrooms & onions, bacon, American & Swiss cheese on a frisco style bun."
 				},
 				{
 					"id": 13,
-					"itemName": "Grand Burger",
-					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger topped with a fried egg, American cheese and double smoked bacon on a toasted bun."
+					"itemName": "Cheeseburger",
+					"itemPrice": "$9.49",
+					"itemDescription": "Grilled Angus Burger with melted American cheese served on a toasted bun with pickles on side."
 				},
 				{
 					"id": 14,
-					"itemName": "Haystack Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "Grilled Angus burger topped with seasoned onion straws held together with melted American cheese and BBQ sauce."
+					"itemName": "Grand Burger",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger topped with a fried egg, American cheese and double smoked bacon on a toasted bun."
 				},
 				{
 					"id": 15,
-					"itemName": "Barn Burner Burger",
+					"itemName": "Haystack Burger",
 					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger topped with onion straws, crispy bacon and held together with spicy pepperjack cheeseand our southwest sauce."
+					"itemDescription": "Grilled Angus Burger topped with seasoned onion straws held together with melted American cheese & BBQ sauce."
 				},
 				{
 					"id": 16,
-					"itemName": "Garlic Cheese Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "Grilled Angus burger covered in garlic herb seasoning, garlic mayo and melted Swiss cheese."
+					"itemName": "Barn Burner Burger",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger topped with our onion straws, crispy bacon & held together with spicy Pepperjack cheese & our Southwest sauce."
 				},
 				{
 					"id": 17,
-					"itemName": "Santa Fe Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "Grilled Angus burger brushed with southwest sauce, crispy bacon and spicy pepperjack cheese."
+					"itemName": "Garlic Cheese Burger",
+					"itemPrice": "$10.49",
+					"itemDescription": "Grilled Angus Burger covered in garlic herb seasoning, garlic mayo & melted Swiss cheese."
 				},
 				{
 					"id": 18,
-					"itemName": "Western Burger",
+					"itemName": "Santa Fe Burger",
 					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger topped with crispy bacon with seasoned onion straws held together with melted American cheese and BBQ sauce."
+					"itemDescription": "Grilled Angus Burger brushed with Southwest sauce, topped with crispy bacon & spicy Pepperjack cheese."
 				},
 				{
 					"id": 19,
-					"itemName": "Peanut Butter Burger",
-					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger topped with double smoked bacon, cheese and peanut butter."
+					"itemName": "Western Burger",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger topped with crispy bacon with seasoned onion straws held together with melted American cheese & BBQ sauce."
 				},
 				{
 					"id": 20,
-					"itemName": "57 Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "Grilled Angus burger topped with crispy onion straws, 57 sauce and melted Swiss cheese."
+					"itemName": "Peanut Butter Burger",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger topped with double smoked bacon, American cheese & peanut butter."
 				},
 				{
 					"id": 21,
-					"itemName": "Bayou Burger",
-					"itemPrice": "$10.49",
-					"itemDescription": "Grilled Angus burger topped with crispy bacon, ,elted bleu cheese and our tangy buffalo sauce."
+					"itemName": "57 Burger",
+					"itemPrice": "$10.29",
+					"itemDescription": "Grilled Angus Burger topped with crispy onion straws, '57 sauce & melted Swiss cheese."
 				},
 				{
 					"id": 22,
+					"itemName": "Bayou Burger",
+					"itemPrice": "$10.69",
+					"itemDescription": "Grilled Angus Burger topped with crispy bacon, melted bleu cheese & our tangy buffalo sauce."
+				},
+				{
+					"id": 23,
 					"itemName": "Mesquite Burger",
-					"itemPrice": "$10.29",
-					"itemDescription": "Grilled Angus burger covered in a zesty mesquite sauce and melted pepperjack cheese."
+					"itemPrice": "$10.49",
+					"itemDescription": "Grilled Angus Burger covered in a zesty Mesquite sauce & melted Pepperjack cheese."
 				},
 			],
 			sandwiches: [
@@ -389,89 +401,89 @@ export default {
 					"id": 1,
 					"itemName": "Grilled or Crispy Chicken Fillet",
 					"itemPrice": "$9.99",
-					"itemDescription": "Choose between golden breaded or tender grilled chicken served on a toasted bun with lettuce, tomato, onion and mayo."
+					"itemDescription": "Choose between golden breaded or tender grilled chicken served on a toasted bun with pickle & mayo."
 				},
 				{
 					"id": 2,
 					"itemName": "Turkey Bacon Melt",
 					"itemPrice": "$10.49",
-					"itemDescription": "Smoked turkey, crispy bacon and melted Swiss cheese piled high on a toasted hoagie bun with lettuce, tomato, onion and mayo."
+					"itemDescription": "Smoked turkey, crispy bacon & melted Swiss cheese piled high on a toasted hoagie bun with lettuce, tomato, onion & mayo."
 				},
 				{
 					"id": 3,
 					"itemName": "Grilled Chicken Bacon Swiss",
 					"itemPrice": "$10.49",
-					"itemDescription": "Grilled chicken breast topped with double smoked bacon and melted Swiss cheese on a toasted bun with lettuce, tomato, onion and mayo."
+					"itemDescription": "Grilled chicken breast topped with double smoked bacon & melted Swiss cheese on a toasted bun with pickle & mayo."
 				},
 				{
 					"id": 4,
 					"itemName": "Buffalo Chicken",
 					"itemPrice": "$10.49",
-					"itemDescription": "Tender grilled or golden crispy chicken brest tossed in our special hot wing sauce. Covered with melted blue cheese on a toasted bun."
+					"itemDescription": "Tender grilled or golden crispy chicken breast tossed in our special hot wing sauce. Covered with melted bleu cheese on a toasted bun."
 				},
 				{
 					"id": 5,
 					"itemName": "Chicken Cordon Bleu",
 					"itemPrice": "$10.49",
-					"itemDescription": "Gilled or crispy chicken breast covered with honey ham and melted Swiss cheese on a toasted bun."
+					"itemDescription": "Grilled or crispy chicken breast covered with honey ham & melted Swiss cheese on a toasted bun with pickle and mayo."
 				},
 				{
 					"id": 6,
 					"itemName": "Crispy Mesquite Chicken",
 					"itemPrice": "$10.49",
-					"itemDescription": "Golden breaded chicken breast topped with out smokey Mesquite ranch and spicy pepperjack cheese."
+					"itemDescription": "Golden breaded chicken breast topped with our smokey Mesquite ranch & spicy Pepperjack cheese."
 				},
 				{
 					"id": 7,
 					"itemName": "Philly Steak & Cheese",
-					"itemPrice": "$9.99",
-					"itemDescription": "Grilled sirloin steak smothered in peppers and onions stuffed inside a grilled hoagie bun with melted Swiss cheese."
+					"itemPrice": "$10.99",
+					"itemDescription": "Grilled sirloin steak smothered in peppers & onions stuffed inside a grilled hoagie bun with melted Swiss cheese. Add mushrooms $0.99"
 				},
 				{
 					"id": 8,
 					"itemName": "Reuben",
 					"itemPrice": "$10.49",
-					"itemDescription": "Thin sliced corned beef piled high with sauerkraut, Swiss cheese and 1,000 island dressing on grilled rye bread."
+					"itemDescription": "Thin sliced corned beef piled high with sauerkraut Swiss cheese & 1000 island dressing on grilled rye bread."
 				},
 				{
 					"id": 9,
 					"itemName": "BLT",
 					"itemPrice": "$10.49",
-					"itemDescription": "Double smoked bacon, crispy lettuce and fresh ripe tomatoes served on white or wheat bread."
+					"itemDescription": "Double smoked bacon, crispy lettuce & fresh red ripe tomatoes served on white or wheat toast."
 				},
 				{
 					"id": 10,
 					"itemName": "Ham Stacker",
 					"itemPrice": "$10.29",
-					"itemDescription": "Thinly sliced ham stacked high with melted Ameican and Swiss cheese on a toasted hoagie bun."
+					"itemDescription": "Thinly sliced ham stacked high with melted American & Swiss cheese on a toasted hoagie bun."
 				},
 				{
 					"id": 11,
 					"itemName": "Club Melt",
 					"itemPrice": "$10.49",
-					"itemDescription": "Sliced ham, smoked turkey and crispy bacon grilled up with melted American and Swiss cheese piled high on a toasted hoagie bun."
+					"itemDescription": "Sliced ham, smoked turkey & crispy bacon grilled up with melted American & Swiss cheese piled high on a toasted hoagie bun."
 				},
 			],
 			wraps: [
 				{
 					"id": 1,
 					"itemName": "Grilled Chicken",
-					"itemDescription": "Grilled chicken breast sliced and placed on top of fresh greens, tomatoes, onions and shredded cheese served with your choice of dressing."
+					"itemDescription": "Grilled chicken breast sliced & placed on top of fresh greens, tomatoes, onions & shredded cheese served with your choice of dressing."
 				},
 				{
 					"id": 2,
 					"itemName": "Crispy Chicken",
-					"itemDescription": "We take our crispy amd juicy chicken tenders and place them on top of fresh greens with tomatoes, onions and shredded cheese with your choice of dressing."
+					"itemDescription": "We take our crispy & juicy chicken tenders & place them on top of fresh greens with tomatoes, onions & shredded cheese with your choice of dressing."
 				},
 				{
 					"id": 3,
 					"itemName": "Buffalo Chicken",
-					"itemDescription": "Grilled or crispy chicken tossed in our buffalo wing sauce placed on top of fresh greens with tomatoesm onions and shredded cheese with your choice of dressing."
+					"itemDescription": "Grilled or crispy chicken tossed in our buffalo wing sauce placed on top of fresh greens with tomatoes, onions & shredded cheese with your choice of dressing."
 				},
 				{
 					"id": 4,
 					"itemName": "Sizzlin' Philly Steak",
-					"itemDescription": "Grilled sirloin steak with sauteed onions and peppers on a fresh bed of greens with tomato, onion and shredded cheese."
+					"itemDescription": "Grilled sirloin steak with sauteed onions & peppers on a fresh bed of greens with tomato, onion & shredded cheese."
 				},
 			]
 		}

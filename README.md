@@ -1,4 +1,8 @@
 # site
+1. Work on dev branch
+2. Push files to build dev site on Netlify
+3. Merge changes with master on github
+4. Merge to master auto-build prod on netlify
 
 ## Project setup
 ```
