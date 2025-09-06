@@ -7,8 +7,8 @@
 						span.rye.colorWhite Willy's 
 						span.variane.colorSecondary Sportsbar
 						span.colorPrimary & Casino
-				.cell.auto
-					button.hamburger(@click.stop.prevent="toggleMenu()", :class="{ active: menuState }")
+				// .cell.auto
+				// 	button.hamburger(@click.stop.prevent="toggleMenu()", :class="{ active: menuState }")
 						span
 				Navigation
 </template>

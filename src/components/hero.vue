@@ -1,13 +1,17 @@
 <template lang="pug">
 	section.hero
+		.under-construction
+			h2.rye Pardon the dust.
+			p Our site is currently under construction. 
+			p But, you should go ahead and checkout our #[a(href="https://www.facebook.com/profile.php?id=100052005944634") Facebook] page.
 		.grid-container
 			.grid-x.grid-padding-x
-				.cell
-					h1.title {{ title }}
+				//- .cell
+				//- 	h1.title {{ title }}
 				.cell
 					.hours
-						a.zipDish(href="https://wtn.zipdishdelivery.com/order/rv/61" target="_blank")
-							img.zipDish-logo(src="@/assets/img/zip-dish-logo.png" alt="Zip Dish Logo")
+						//- a.zipDish(href="https://wtn.zipdishdelivery.com/order/rv/61" target="_blank")
+						//- 	img.zipDish-logo(src="@/assets/img/zip-dish-logo.png" alt="Zip Dish Logo")
 						h3 Hours
 						ul.hours-list
 							li Sunday: 10:00 am - 12:00 am
